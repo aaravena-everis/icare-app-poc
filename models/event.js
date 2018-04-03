@@ -32,7 +32,8 @@ var eventSchema = new Schema({
         moderators:[{
             name: { type : String },
             job: { type : String },
-            image: { type : String }
+            image: { type : String },
+            rol: { type : String }
         }],
         speechs:[{
             idAuthor : { type : Schema.ObjectId, ref: 'author', required: true },
