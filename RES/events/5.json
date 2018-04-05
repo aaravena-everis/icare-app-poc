@@ -1,0 +1,14 @@
+{
+    "_id" : ObjectId("5abac06ff6152036fe41b4d2"),
+    "location" : null,
+    "title" : "Mes del Mar",
+    "subtitle" : "Foro ICARE",
+    "date" : ISODate("2018-05-03T00:00:00.000Z"),
+    "image" : "http://www.icare.cl/assets/uploads/2017/12/blc_4655-1280x540-c-default.jpg",
+    "featured" : false,
+    "description" : null,
+    "manifest" : null,
+    "ticket" : null,
+    "sessions" : null,
+    "inscriptions" : []
+}

@@ -1,0 +1,128 @@
+{
+    "_id" : ObjectId("5abac0a1f6152036fe41b7a0"),
+    "location" : {
+        "coordinates" : [ 
+            -33.5912144, 
+            -70.5820701
+        ],
+        "name" : "Protectora de la Infancia",
+        "streetName" : "Av. Concha y Toro",
+        "streetNumber" : "2188",
+        "district" : "Puente Alto",
+        "region" : "Region Metropolitana",
+        "country" : "Chile"
+    },
+    "title" : "Empresa y Filantropía",
+    "subtitle" : "Fortalecimiento de la Cooperación Público - Privada",
+    "date" : ISODate("2018-04-26T00:00:00.000Z"),
+    "image" : "http://www.icare.cl/assets/uploads/2018/03/captura-de-pantalla-2018-03-29-a-las-14-53-52-1280x540-c-default.png",
+    "featured" : true,
+    "description" : "<p>El objetivo de este encuentro es discutir acerca de las fortalezas y debilidades que presenta el estado actual de la filantropía en Chile, lo que se manifiesta en desafíos históricos de la legislación existente como también las bases de la relación público-privada con el fin de cooperar en diversas áreas  de interés social.</p><p>Las ponencias buscarán identificar brevemente estos problemas y oportunidades, con una mirada del sector legislativo, mostrando proyectos exitosos y dando a conocer y comparar el rol y relevancia de la filantropía en otros países.</p>",
+    "manifest" : null,
+    "ticket" : [ 
+        {
+            "type" : "Individual",
+            "memberCost" : "2 UF",
+            "generalCost" : "4 UF"
+        }
+    ],
+    "sessions" : [ 
+        {
+            "number" : null,
+            "name" : "Apertura",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Rodrigo Velasco",
+                    "job" : "Círculo Legal de ICARE",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/rodrigo-velasco-e1522338456495-116x116-c-default.jpg",
+                    "rol" : "Apertura"
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Filantropía: Personas y Empresas",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Emilio Sanfuentes",
+                    "job" : "Socio Director Corpo Comunicaciones",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/emilio-e1522338890380-120x120-c-default.jpg",
+                    "rol" : null
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "No es un cuento",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Verónica Abud",
+                    "job" : "Directora Ejecutiva de Fundación La Fuente",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/vero-abud-e1522341158407-120x120-c-default.jpeg",
+                    "rol" : null
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "El contexto mundial de la filantropía",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Jacqueline Elías",
+                    "job" : "Director Gerente, Asesora Sénior de Filantropía, J.P. Morgan Private Bank",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/jackie-elias-1-1-e1522343865562-120x120-c-default.jpg",
+                    "rol" : null
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Un nuevo marco legal para una sociedad más solidaria",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Carlos Montes",
+                    "job" : "Presidente del Senado",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/carlos-montes-e1522343960895-120x120-c-default.jpeg",
+                    "rol" : null
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Integración e inclusión: Desafío de todos",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Alfredo Moreno",
+                    "job" : "Ministro de Desarrollo Social",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/alfredo-moreno-e1522344208990-120x120-c-default.jpg",
+                    "rol" : null
+                }
+            ],
+            "speechs" : []
+        }
+    ],
+    "inscriptions" : []
+}

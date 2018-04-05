@@ -1,0 +1,14 @@
+{
+    "_id" : ObjectId("5abac043f6152036fe41b227"),
+    "location" : null,
+    "title" : "Foro Mujeres",
+    "subtitle" : null,
+    "date" : ISODate("2018-05-10T00:00:00.000Z"),
+    "image" : "http://www.icare.cl/assets/uploads/2017/12/blc_4655-1280x540-c-default.jpg",
+    "featured" : false,
+    "description" : null,
+    "manifest" : null,
+    "ticket" : null,
+    "sessions" : null,
+    "inscriptions" : []
+}
