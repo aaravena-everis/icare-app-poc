@@ -41,6 +41,7 @@ var authorCtrl = require('./controllers/author');
 var eventCtrl = require('./controllers/event');
 var userCtrl = require('./controllers/user');
 var streamCtrl = require('./controllers/stream-url');
+var versionCtrl = require('./controllers/version');
 
 // API routes
 app.use('/api', api);
@@ -53,6 +54,7 @@ api.route('/comment/add').post(eventCtrl.addCommentToSpeech);
 api.route('/evaluation/add').post(eventCtrl.addEvaluationToSpeech);
 api.route('/inscription/add').post(eventCtrl.addInscription);
 api.route('/url-stream').get(streamCtrl.getStreamUrl);
+api.route('/version/:nombre').get(versionCtrl.getVersion);
 
 
 // Start server
