@@ -1,0 +1,11 @@
+{
+    "_id" : ObjectId("5aa69d8c8bc0b425b4a7bdd7"),
+    "name" : "Leo Prieto",
+    "job" : "Socio fundador de Betazeta, FayerWayer y director de AWTO",
+    "image" : "http://www.icare.cl/assets/uploads/2017/11/2--leo-prieto-ok-e1511879138424-120x120-c-default.jpeg",
+    "biography" : "A los 16 años fundó ImageMaker, empresa de desarrollo web reconocida en América Latina. La vendió y a los 24 años inició FayerWayer, el blog de noticias tecnológicas más in uyente de habla hispana. Con su éxito, apuntaló la creación del holding medial Betazeta, que en 2016 fue adquirido por Metro International, el periódico más grande del mundo. Prieto es socio y presidente de Stgo Makerspace, la llamada “fábrica de inventores” de Chile. Ha recorrido el continente dando charlas y, a la vez, recibiendo reconocimientos nacionales e internacionales: Top 100 International Web Developers (Clickz, 2001), 100 Jóvenes Líderes (El Mercurio, 2006), Emprendedor del Año en América Latina (América Economía, 2012), MKTG Best Marketing Digital (MKTG Best, 2012), The GOOD 100 (GOOD Magazine, 2013), entre otros.",
+    "linkedin" : "",
+    "facebook" : "",
+    "twitter" : "",
+    "__v" : 0
+}

@@ -7,10 +7,10 @@ config.dbOptions = {
         poolSize: 10,
         reconnectTries: Number.MAX_VALUE
     },
-    user: 'everis-poc',
-    pass: 'everis-poc'
+    user: 'icare-dev',
+    pass: 'icare-dev'
 };
-config.dbEndpoint = 'mongodb://ds153015.mlab.com:53015/heroku_gqscj5zg';
+config.dbEndpoint = 'mongodb://ds053218.mlab.com:53218/heroku_4m0g8nhg'; 
 config.web.port = process.env.PORT || 8080;
 config.secret = 'BkBUltR453Cr3TP4sSW0Rd';
 module.exports = config;

@@ -1,0 +1,11 @@
+{
+    "_id" : ObjectId("5aa69dbf1c027517e4d59f63"),
+    "name" : "Andrés Valdivia",
+    "job" : "Director Ejecutivo de Noise Media",
+    "image" : "http://www.icare.cl/assets/uploads/2017/11/andrees-valdiviadirector-ejecutivo-noise-media-e1510239702861-120x120-c-default.jpg",
+    "biography" : "Composición musical es la palabra que acompaña a Valdivia. Ha realizado bandas sonoras para películas como “Se Arrienda”, “La hija del General” y “199 recetas para ser feliz”, a lo que se suma la producción de los discos independientes Nutria “Roquerio” y Valdivia “Nudociego”, “Efecto Secundarios” y “Gordita Beach”. Ingeniero Civil Eléctrico de la Ponti ca Universidad Católica de Chile —con un Master in Music de la New York University— cofundó Podcaster.cl (2006), Noise-Media y Zeppelin (2009). De estas últimas es el Director Ejecutivo. Además, ha sido profesor en su alma mater en Ingeniería Comercial y en la Facultad de Comunicaciones.",
+    "linkedin" : "",
+    "facebook" : "",
+    "twitter" : "",
+    "__v" : 0
+}

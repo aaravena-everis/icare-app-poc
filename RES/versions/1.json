@@ -1,0 +1,8 @@
+{
+    "_id" : ObjectId("5ac404b6f6152036fee7ab9e"),
+    "nombre" : "Icare",
+    "desc" : "Versión de test con cliente",
+    "version" : "1.0.4",
+    "forzar" : false,
+    "activar" : false
+}

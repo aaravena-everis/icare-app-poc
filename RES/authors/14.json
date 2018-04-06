@@ -1,0 +1,11 @@
+{
+    "_id" : ObjectId("5aa69f722596a621e44e3794"),
+    "name" : "Matías Muchnick",
+    "job" : "Socio Fundador",
+    "image" : "http://www.icare.cl/assets/uploads/2017/11/13--matias-muchnick-e1511885327743-120x120-c-default.jpg",
+    "biography" : "Es CEO y Fundador de NotCo, empresa de food-tech que combina Inteligencia Artificial con ciencia molecular para desarrollar alimentos ricos, saludables y accesibles a partir de vegetales. Fue destacado como uno de los 100 Jóvenes Líderes de 2016. Con NotCo ganó el premio Avonni 2016, logró posicionar productos en más de 220 tiendas en Chile y están siendo potenciados por IndieBio, la aceleradora de biotecnología más prestigiosa de Sillicon Valley. Si bien su background es en finanzas y negocios pasando por la Universidad de Chile, Berkeley y Harvard, su pasión y objetivo siempre ha sido la disrupción del sistema alimenticio.",
+    "linkedin" : "",
+    "facebook" : "",
+    "twitter" : "",
+    "__v" : 0
+}

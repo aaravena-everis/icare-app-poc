@@ -1,0 +1,11 @@
+{
+    "_id" : ObjectId("5aa69eef9c368235a0f416be"),
+    "name" : "María Elena Guerrero",
+    "job" : "Gerente de Marketing Corporativo",
+    "image" : "http://www.icare.cl/assets/uploads/2017/11/10--mane-guerrero-e1511885222779-120x120-c-default.jpg",
+    "biography" : "Ingeniero comercial de la Pontificia Universidad Católica de Chile. Con una vasta experiencia en marketing, ha participado en diversas industrias como el consumo masivo, medios de comunicación y retail. Hasta comienzos de 2011 se desempeñó como Gerente de Marketing en Canal 13, liderando el cambio de imagen de la señal y el lanzamiento de emblemáticos programas como Machos, Los 80, el relanzamiento de 13C y Radio Sonar. Ese mismo año ingresa a Mall Plaza como Gerente de Marketing. Actualmente se desempeña como Gerente Regional de Marketing, posición responsable de la estrategia de marca y posicionamiento para Chile, Perú y Colombia.",
+    "linkedin" : "",
+    "facebook" : "",
+    "twitter" : "",
+    "__v" : 0
+}

@@ -1,0 +1,11 @@
+{
+    "_id" : ObjectId("5a9f0ec00bd7733b4ce46919"),
+    "name" : "Juan Perez",
+    "job" : "Country Manager",
+    "image" : "http://www.24horas.cl/incoming/linea6-2656042/ALTERNATES/w940/Linea6",
+    "biography" : "The best biografía",
+    "linkedin" : "https://www.google.com",
+    "facebook" : "https://www.google.com",
+    "twitter" : "https://www.google.com",
+    "__v" : 0
+}

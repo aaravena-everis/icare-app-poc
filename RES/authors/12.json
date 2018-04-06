@@ -1,0 +1,11 @@
+{
+    "_id" : ObjectId("5aa69f0f73af4128d4c865ca"),
+    "name" : "Matías Sánchez",
+    "job" : "Gerente División Banca Comercial",
+    "image" : "http://www.icare.cl/assets/uploads/2017/11/11--matias-sanchez-e1511885264396-120x120-c-default.jpg",
+    "biography" : "Es gerente de la División de Banca Comercial del Banco Santander en Chile desde 2016, la que emplea a 8.400 personas. Tiene a cargo las áreas de Estrategia e Innovación Comercial, Productos, Marketing, Red de Sucursales, Contact Center, Inteligencia de Clientes y Banca Digital, Nuevos proyectos y Santander Consumer Finance. Sánchez García es Licenciado en Ciencias Económicas, con Especialidad de Economía Cuantitativa, de la Universidad de Alicante (España). Realizó un MBA en el Instituto de Empresa en Madrid y un Magíster en Dirección General en el IESE de la Universidad de Navarra.",
+    "linkedin" : "",
+    "facebook" : "",
+    "twitter" : "",
+    "__v" : 0
+}

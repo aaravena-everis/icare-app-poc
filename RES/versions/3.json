@@ -1,0 +1,8 @@
+{
+    "_id" : ObjectId("5ac404a6f6152036fee7aa76"),
+    "nombre" : "Icare POC",
+    "desc" : "Versión de desarrllo",
+    "version" : "0.2.22",
+    "forzar" : false,
+    "activar" : false
+}

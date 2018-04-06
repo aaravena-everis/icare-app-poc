@@ -1,14 +1,145 @@
 {
     "_id" : ObjectId("5abac043f6152036fe41b227"),
-    "location" : null,
-    "title" : "Foro Mujeres",
-    "subtitle" : null,
+    "location" : {
+            "coordinates" : [ 
+                -33.4143449, 
+                -70.6084553
+            ],
+            "name" : "Santiago Business & Conference Center",
+            "streetName" : "Av. Costanera Sur",
+            "streetNumber" : "2710",
+            "district" : "Las Condes",
+            "region" : "Region Metropolitana",
+            "country" : "Chile"
+        },
+    "title" : "La era de la mujer",
+    "subtitle" : "FORO · Mujeres al Timón Vol. 14",
     "date" : ISODate("2018-05-10T00:00:00.000Z"),
-    "image" : "http://www.icare.cl/assets/uploads/2017/12/blc_4655-1280x540-c-default.jpg",
-    "featured" : false,
+    "image" : "http://www.icare.cl/assets/uploads/2018/04/foro-mujeres--web-1-1280x540-c-default.jpg",
+    "featured" : true,
     "description" : null,
     "manifest" : null,
-    "ticket" : null,
-    "sessions" : null,
+    "ticket" : [ 
+        {
+            "type" : "Individual",
+            "memberCost" : "2 UF",
+            "generalCost" : "4 UF"
+        }
+    ],
+    "sessions" : [
+        {
+            "number" : null,
+            "name" : "Presentación",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Claudio Muñoz",
+                    "job" : "Presidente de ICARE",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/10/2--claudio-munoz2-116x116-c-default.jpg",
+                    "rol": "Conduce"
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Agenda de la Mujer del Gobierno",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Isabel Plá",
+                    "job" : "Ministra de la Mujer y Equidad de Género",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/isabel-pla-1-e1522854805737-120x120-c-default.jpg",
+                    "rol": null
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Mujer y trabajo hoy",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Marta Calvo",
+                    "job" : "Líder de Women@BCG South América",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/marta-calvo-v1-e1522854934197-120x120-c-default.jpg",
+                    "rol": null
+                }
+            ],
+            "speechs" : []
+        },
+        {
+            "number" : null,
+            "name" : "Mujeres y legislación laboral",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Francisca Jünemann",
+                    "job" : "Presidenta Ejecutiva y cofundadora de Chile Mujeres",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/whatsapp-image-2018-04-04-at-12-19-39-e1522856310417-120x120-c-default.jpeg",
+                    "rol": null
+                }
+            ],
+            "speechs" : []
+        },
+        {
+            "number" : null,
+            "name" : "COFFE BREAK · 10:30 a 11:00 horas",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [],
+            "speechs" : []
+        } ,
+        {
+            "number" : null,
+            "name" : "Cerrando la brecha",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Soledad Onetto",
+                    "job" : null,
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/soledad-onetto-8-e1522855221603-116x116-c-default.jpg",
+                    "rol": "Moderadora"
+                },
+                {
+                    "name" : "Alejandra Aranda",
+                    "job" : "Presidenta y Socia Fundadora de Humanitas Executive Search",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/alejandra-aranda-e1523020059171-120x120-c-default.jpg",
+                    "rol": null
+                },
+                {
+                    "name" : "Pablo Devoto",
+                    "job" : "Gerente General de Nestlé",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/pablo-devoto-2-e1522855375446-120x120-c-default.jpg",
+                    "rol": null
+                },
+                {
+                    "name" : "Daniel Malchuk",
+                    "job" : "CEO de BHP Billiton",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/pablo-devoto-2-e1522855375446-120x120-c-default.jpg",
+                    "rol": null
+                },
+                {
+                    "name" : "Axel Leveque",
+                    "job" : "Gerente General de Engie Energía Chile",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/axel-leveque-2018-e1522868848349-120x120-c-default.jpg",
+                    "rol": null
+                }
+            ],
+            "speechs" : []
+        }
+    ],
     "inscriptions" : []
 }

@@ -1,0 +1,8 @@
+{
+    "_id" : ObjectId("5ac40511f6152036fee7b129"),
+    "nombre" : "ICARE",
+    "desc" : "Versión disponible en store",
+    "version" : "0.1.2",
+    "forzar" : false,
+    "activar" : false
+}
