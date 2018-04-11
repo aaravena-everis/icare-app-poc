@@ -27,6 +27,50 @@ exports.getAllEvents = function(req, res) {
     });
 };
 
+exports.getFeaturedEvents = function(req, res) {
+    var query = Event.find({"featured": true }).exec();
+    var r_event_list= [];
+    query.then(function(events){
+        events.forEach(function(event){
+            var r_event = {
+                title: event.title,
+                subtitle: event.subtitle,
+                date: event.date,
+                location: event.location.name,
+                image: event.image,
+                featured: event.featured,
+                id: event._id
+            };
+            r_event_list.push(r_event);
+        });
+        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_event_list));
+    }).catch(function(err){
+        res.status(500).jsonp(response.errorResponse(500,labels.ERRA006, err.message));
+    });
+};
+
+exports.getArchiveEvents = function(req, res) {
+    var query = Event.find({"archived": true }).exec();
+    var r_event_list= [];
+    query.then(function(events){
+        events.forEach(function(event){
+            var r_event = {
+                title: event.title,
+                subtitle: event.subtitle,
+                date: event.date,
+                location: event.location.name,
+                image: event.image,
+                featured: event.featured,
+                id: event._id
+            };
+            r_event_list.push(r_event);
+        });
+        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_event_list));
+    }).catch(function(err){
+        res.status(500).jsonp(response.errorResponse(500,labels.ERRA006, err.message));
+    });
+};
+
 exports.getEventDetail = function(req, res) {
     try {
         if (!response.isValidID(req.params.id)){

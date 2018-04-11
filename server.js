@@ -49,6 +49,8 @@ api.route('/author/:id').get(authorCtrl.getAuthor);
 api.route('/user').post(userCtrl.add);
 api.route('/authentication').post(userCtrl.authentication);
 api.route('/event').get(eventCtrl.getAllEvents);
+api.route('/event-featured').get(eventCtrl.getFeaturedEvents);
+api.route('/event-archived').get(eventCtrl.getArchiveEvents);
 api.route('/event/:id').get(eventCtrl.getEventDetail);
 api.route('/comment/add').post(eventCtrl.addCommentToSpeech);
 api.route('/evaluation/add').post(eventCtrl.addEvaluationToSpeech);

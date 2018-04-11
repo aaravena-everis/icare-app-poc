@@ -5,6 +5,7 @@ var eventSchema = new Schema({
     title : { type : String, required: true  },
     subtitle : { type : String },
     date : { type : Date },
+    archived: { type: Boolean },
     image : { type : String },
     featured : { type : Boolean},
     description : { type : String },
@@ -42,6 +43,7 @@ var eventSchema = new Schema({
             job: { type : String },
             image: { type : String },
             description: { type : String },
+            pdfUrl: { type : String },
             evaluations: [{
                 evaluation: { type : Number }
             }],
