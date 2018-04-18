@@ -10,7 +10,15 @@ var userSchema = new Schema({
         type : Schema.ObjectId, ref: 'event', required: true
     }],
 
-    linkedIn: {type : String},
+    facebook: {type : String },
+    twitter: {type : String },
+    linkedIn: {type : String },
+    occupation: { type : String },
+    company: { type: String },
+    job: { type: String },
+    imageUrl: { type: String },
+    image: { type: String },
+    share: { type: Boolean, default : true }
 	
 	pushNotification: { type : Boolean, default : true, required : true },
 	mobile_xid: { type : String},

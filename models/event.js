@@ -37,7 +37,7 @@ var eventSchema = new Schema({
             rol: { type : String }
         }],
         speechs:[{
-            idAuthor : { type : Schema.ObjectId, ref: 'author', required: true },
+            idAuthor : { type : Schema.ObjectId, ref: 'author' },
             title: { type : String },
             author: { type : String },
             job: { type : String },
