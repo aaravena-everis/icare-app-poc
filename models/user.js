@@ -18,7 +18,7 @@ var userSchema = new Schema({
     job: { type: String },
     imageUrl: { type: String },
     image: { type: String },
-    share: { type: Boolean, default : true }
+    share: { type: Boolean, default : true },
 	
 	pushNotification: { type : Boolean, default : true, required : true },
 	mobile_xid: { type : String},
