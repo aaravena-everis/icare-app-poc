@@ -43,7 +43,7 @@ var eventSchema = new Schema({
             job: { type : String },
             image: { type : String },
             description: { type : String },
-            pdfUrl: { type : String },
+            pdf: { type : String },
             evaluations: [{
                 evaluation: { type : Number }
             }],
