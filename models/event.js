@@ -5,6 +5,8 @@ var eventSchema = new Schema({
     title : { type : String, required: true  },
     subtitle : { type : String },
     date : { type : Date },
+    time_start : { type : Date },
+    time_end : { type :  Date },
     archived: { type: Boolean },
     image : { type : String },
     featured : { type : Boolean},

@@ -71,6 +71,37 @@ exports.getArchiveEvents = function(req, res) {
     });
 };
 
+exports.getTodayEvent = function(req, res) {
+
+    var today = new Date();
+    //today.setHours(-3,0,0,0);
+    today.setHours(today.getHours()-3)
+    console.log(today);
+
+    var query = Event.find({time_end: {$gte: today}, time_start: {$lte: today}}).exec();
+
+    var r_event_list= [];
+        query.then(function(events){
+            events.forEach(function(event){
+                var r_event = {
+                    title: event.title,
+                    subtitle: event.subtitle,
+                    date: event.date,
+                    location: event.location.name,
+                    image: event.image,
+                    featured: event.featured,
+                    id: event._id,
+                    time_start: event.time_start,
+                    time_end: event.time_end
+                };
+                r_event_list.push(r_event);
+            });
+            res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_event_list));
+        }).catch(function(err){
+            res.status(500).jsonp(response.errorResponse(500,labels.ERRA006, err.message));
+        });
+}
+
 exports.getEventDetail = function(req, res) {
     try {
         if (!response.isValidID(req.params.id)){
