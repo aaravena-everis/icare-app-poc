@@ -22,7 +22,7 @@ exports.add = function(req, res) {
                 lastName: req.body.lastName.toUpperCase(),
                 email: req.body.email.toLowerCase(),
                 password: req.body.password.toLowerCase(),
-                linkedIn: req.body.linkedId,
+                linkedin: req.body.linkedin,
                 company: req.body.company,
                 facebook: req.body.facebook,
                 image: req.body.image,
@@ -63,7 +63,7 @@ exports.add = function(req, res) {
     }
 };
 
-export.getUserCard = function(req, res) {
+exports.getUserCard = function(req, res) {
     try {
         if (!response.isValidID(req.params.id)){
             res.status(500).send(response.errorResponse(400,labels.ERRA005));
@@ -96,7 +96,7 @@ export.getUserCard = function(req, res) {
     } catch (handler) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
-}
+};
 
 exports.authentication = function(req, res) {
     try {
