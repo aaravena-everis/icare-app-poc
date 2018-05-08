@@ -47,6 +47,7 @@ var versionCtrl = require('./controllers/version');
 app.use('/api', api);
 api.route('/author/:id').get(authorCtrl.getAuthor);
 api.route('/user').post(userCtrl.add);
+api.route('/user/:id').get(userCtrl.getUserCard);
 api.route('/authentication').post(userCtrl.authentication);
 api.route('/event').get(eventCtrl.getAllEvents);
 api.route('/event-featured').get(eventCtrl.getFeaturedEvents);

@@ -22,7 +22,15 @@ exports.add = function(req, res) {
                 lastName: req.body.lastName.toUpperCase(),
                 email: req.body.email.toLowerCase(),
                 password: req.body.password.toLowerCase(),
-                linkedId: req.body.linkedId
+                linkedIn: req.body.linkedId,
+                company: req.body.company,
+                facebook: req.body.facebook,
+                image: req.body.image,
+                imagenUrl: req.body.imagenUrl,
+                job: req.body.job,
+                occupation: req.body.occupation,
+                share: req.body.share,
+                twitter: req.body.twitter
             });
             user.password = bcrypt.hashSync(user.password);
             var query = User.findOne({ email: user.email }).exec();
@@ -54,6 +62,41 @@ exports.add = function(req, res) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
 };
+
+export.getUserCard = function(req, res) {
+    try {
+        if (!response.isValidID(req.params.id)){
+            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+        }else{
+            var query = User.findById(req.params.id).exec();
+            query.then(function(user){
+                if(user){
+                    var r_user = {
+                        name: user.name,
+                        lastName: user.lastName,
+                        email: user.email,
+                        facebook: user.facebook,
+                        twitter: user.twitter,
+                        linkedin: user.linkedin,
+                        occupation: user.occupation,
+                        company: user.company,
+                        job: user.job,
+                        imageUrl: user.imageUrl,
+                        image: user.image,
+                        _id: user._id
+                    };
+                    res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_user));
+                }else{
+                    res.status(400).jsonp(response.errorResponse(400,labels.ERRA007))
+                }
+            }).catch(function(err){
+                res.status(500).jsonp(response.errorResponse(500,labels.ERRA006, err.message));
+            });
+        }
+    } catch (handler) {
+        res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
+    }
+}
 
 exports.authentication = function(req, res) {
     try {

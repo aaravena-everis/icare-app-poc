@@ -76,7 +76,6 @@ exports.getTodayEvent = function(req, res) {
     var today = new Date();
     //today.setHours(-3,0,0,0);
     today.setHours(today.getHours()-3)
-    console.log(today);
 
     var query = Event.find({time_end: {$gte: today}, time_start: {$lte: today}}).exec();
 

@@ -12,7 +12,7 @@ var userSchema = new Schema({
 
     facebook: {type : String },
     twitter: {type : String },
-    linkedIn: {type : String },
+    linkedin: {type : String },
     occupation: { type : String },
     company: { type: String },
     job: { type: String },
