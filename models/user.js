@@ -10,13 +10,14 @@ var userSchema = new Schema({
         type : Schema.ObjectId, ref: 'event', required: true
     }],
 
+    telephone: { type: String },
     facebook: {type : String },
     twitter: {type : String },
     linkedin: {type : String },
     occupation: { type : String },
     company: { type: String },
     job: { type: String },
-    imageUrl: { type: String },
+    imageurl: { type: String },
     image: { type: String },
     share: { type: Boolean, default : true },
 	
@@ -26,7 +27,11 @@ var userSchema = new Schema({
 	
 	createdDate : { type: Date, default: Date.now },
 	modifiedData : { type: Date, default: Date.now },
-	isEnabled : { type : Boolean, default : true, required : true }
+	isEnabled : { type : Boolean, default : true, required : true },
+
+    contacts: [{
+        type : Schema.ObjectId, ref: 'user', required: true, unique: true
+    }]
 	
 
 });

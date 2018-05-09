@@ -24,9 +24,10 @@ exports.add = function(req, res) {
                 password: req.body.password.toLowerCase(),
                 linkedin: req.body.linkedin,
                 company: req.body.company,
+                telephone: req.body.telephone,
                 facebook: req.body.facebook,
                 image: req.body.image,
-                imagenUrl: req.body.imagenUrl,
+                imageurl: req.body.imagenUrl,
                 job: req.body.job,
                 occupation: req.body.occupation,
                 share: req.body.share,
@@ -63,6 +64,58 @@ exports.add = function(req, res) {
     }
 };
 
+exports.update = function(req, res) {
+    try {
+        if(!req.body.name){
+            res.status(400).send(response.errorResponse(400, labels.ERRA001));
+        }else if(!req.body.lastName){
+            res.status(400).send(response.errorResponse(400, labels.ERRA002));
+        }else if(!req.body.email){
+            res.status(400).send(response.errorResponse(400, labels.ERRA003));
+        }else if (!response.isValidID(req.params.id)){
+            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+        }else{
+            
+            
+
+            var userUP = { $set: {
+                name: req.body.name.toUpperCase(),
+                lastName: req.body.lastName.toUpperCase(),
+                email: req.body.email.toLowerCase(),
+                linkedin: req.body.linkedin,
+                company: req.body.company,
+                telephone: req.body.telephone,
+                facebook: req.body.facebook,
+                image: req.body.image,
+                imageurl: req.body.imagenUrl,
+                job: req.body.job,
+                occupation: req.body.occupation,
+                share: req.body.share,
+                twitter: req.body.twitter
+            } };
+                var queryBusqueda = { _id: req.params.id };
+
+                    var query2 = user.update(queryBusqueda, userUP);
+                    query2.then(function(user_){
+                        var _user = {
+                            _id : user_._id,
+                            name: user.name,
+                            lastName: user.lastName,
+                            token: '',
+                            ts: Date.now()
+                        };
+                        var token = jwt.encode(_user, config.secret);
+                        _user.token = 'JWT '+ token;
+                        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
+                    }).catch(function(err_){
+                        res.status(500).send(response.errorResponse(500,labels.ERRA006,err_.message));
+                    });
+        }
+    } catch (handler) {
+        res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
+    }
+};
+
 exports.getUserCard = function(req, res) {
     try {
         if (!response.isValidID(req.params.id)){
@@ -75,13 +128,14 @@ exports.getUserCard = function(req, res) {
                         name: user.name,
                         lastName: user.lastName,
                         email: user.email,
+                        telephone: user.telephone,
                         facebook: user.facebook,
                         twitter: user.twitter,
                         linkedin: user.linkedin,
                         occupation: user.occupation,
                         company: user.company,
                         job: user.job,
-                        imageUrl: user.imageUrl,
+                        imageurl: user.imageurl,
                         image: user.image,
                         _id: user._id
                     };
@@ -97,6 +151,48 @@ exports.getUserCard = function(req, res) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
 };
+
+exports.addContact = function(req, res) {
+    try {
+        if (!response.isValidID(req.params.idUser)){
+                    res.status(500).send(response.errorResponse(400,labels.ERRA005));
+        } else if (!response.isValidID(req.params.idContact)){
+            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+        }else{
+            
+            var query = User.findById(req.params.idUser).exec();
+            query.then(function(user){
+                if(user) {
+                    var codeContact = false;
+                    user.contacts.forEach(function(contact){
+                        if(contact == req.params.idContact){
+                            codeContact = true;
+                            res.status(400).jsonp(response.errorResponse(400,labels.ERRA017))
+                        }
+                    });
+                    if(!codeContact){
+                        user.contacts.push(req.params.idContact);
+                        var query_res = user.save();
+                        query_res.then(function(respuesta) {
+                            if(respuesta){
+                                res.status(200).jsonp(response.successfulResponse(labels.SUCC015,'Contacto agregado'));
+                            }else{
+                                res.status(400).jsonp(response.errorResponse(400,labels.ERRA016))
+                            }
+                        }).catch(function(err){
+                            res.status(500).jsonp(response.errorResponse(500,labels.ERRA016, err.message));
+                        });
+                    }
+                } else {
+                    res.status(400).jsonp(response.errorResponse(400,labels.ERRA016));
+                }
+            });
+        }
+    } catch (handler) {
+        res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
+    }
+
+}
 
 exports.authentication = function(req, res) {
     try {
