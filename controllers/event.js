@@ -6,7 +6,12 @@ var Event = mongoose.model('event');
 
 
 exports.getAllEvents = function(req, res) {
-    var query = Event.find({}).exec();
+    var today = new Date();
+    //today.setHours(-3,0,0,0);
+    today.setHours(today.getHours()-3)
+
+    var query = Event.find({time_end: {$gte: today}}).exec();
+    //var query = Event.find({}).exec();
     var r_event_list= [];
     query.then(function(events){
         events.forEach(function(event){
@@ -28,7 +33,12 @@ exports.getAllEvents = function(req, res) {
 };
 
 exports.getFeaturedEvents = function(req, res) {
-    var query = Event.find({"featured": true }).exec();
+    var today = new Date();
+    //today.setHours(-3,0,0,0);
+    today.setHours(today.getHours()-3)
+
+    var query = Event.find({time_end: {$gte: today}, "featured": true }).exec();
+    //var query = Event.find({"featured": true }).exec();
     var r_event_list= [];
     query.then(function(events){
         events.forEach(function(event){
@@ -50,7 +60,12 @@ exports.getFeaturedEvents = function(req, res) {
 };
 
 exports.getArchiveEvents = function(req, res) {
-    var query = Event.find({"archived": true }).exec();
+    var today = new Date();
+    //today.setHours(-3,0,0,0);
+    today.setHours(today.getHours()-3)
+
+    var query = Event.find({time_start: {$lte: today}, "archived": true, "featured": true}).exec();
+    //var query = Event.find({"archived": true }).exec();
     var r_event_list= [];
     query.then(function(events){
         events.forEach(function(event){
@@ -61,6 +76,7 @@ exports.getArchiveEvents = function(req, res) {
                 location: event.location.name,
                 image: event.image,
                 featured: event.featured,
+                archived: event.archived,
                 id: event._id
             };
             r_event_list.push(r_event);
@@ -74,10 +90,15 @@ exports.getArchiveEvents = function(req, res) {
 exports.getTodayEvent = function(req, res) {
 
     var today = new Date();
+    var today2 = new Date();
+    console.log(today)
     //today.setHours(-3,0,0,0);
     today.setHours(today.getHours()-3)
+    today2.setHours(today2.getHours()-1)
+    console.log(today)
+    console.log(today2)
 
-    var query = Event.find({time_end: {$gte: today}, time_start: {$lte: today}}).exec();
+    var query = Event.find({time_end: {$gte: today}, time_start: {$lte: today2}}).exec();
 
     var r_event_list= [];
         query.then(function(events){
