@@ -88,6 +88,7 @@ exports.add = function(req, res) {
 };
 
 exports.update = function(req, res) {
+    console.log("USUARIO======== "+req.params.id)
     try {
         if(!req.body.name){
             res.status(400).send(response.errorResponse(400, labels.ERRA001));
@@ -99,7 +100,7 @@ exports.update = function(req, res) {
             res.status(500).send(response.errorResponse(400,labels.ERRA005));
         }else{
 
-            var userUP = { $set: {
+            var userUP = new User { $set: {
                 name: req.body.name.toUpperCase(),
                 lastName: req.body.lastName.toUpperCase(),
                 email: req.body.email.toLowerCase(),
@@ -116,7 +117,7 @@ exports.update = function(req, res) {
             } };
                 var queryBusqueda = { _id: req.params.id };
 
-                    var query2 = user.update(queryBusqueda, userUP);
+                    var query2 = userUP.update(queryBusqueda, userUP);
                     query2.then(function(user_){
                         var _user = {
                             _id : user_._id,
