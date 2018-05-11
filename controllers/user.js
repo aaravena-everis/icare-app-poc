@@ -65,56 +65,38 @@ exports.add = function(req, res) {
     }
 };
 
-exports.update = function(req, res) {
-    try {
-        if(!req.body.name){
-            res.status(400).send(response.errorResponse(400, labels.ERRA001));
-        }else if(!req.body.lastName){
-            res.status(400).send(response.errorResponse(400, labels.ERRA002));
-        }else if(!req.body.email){
-            res.status(400).send(response.errorResponse(400, labels.ERRA003));
-        }else if (!response.isValidID(req.params.id)){
-            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+exports.update = function(req, res){    
+    var query = User.findById(req.params.id).exec();
+    query.then(function(userUPdate){
+        if(userUPdate){
+            userUPdate.name = req.body.name.toUpperCase();
+            userUPdate.lastName= req.body.lastName.toUpperCase();
+            userUPdate.email= req.body.email.toLowerCase();
+            userUPdate.password= req.body.password.toLowerCase();
+            userUPdate.linkedin= req.body.linkedin;
+            userUPdate.company= req.body.company;
+            userUPdate.telephone= req.body.telephone;
+            userUPdate.facebook= req.body.facebook;
+            userUPdate.image= req.body.image;
+            userUPdate.imageurl= req.body.imageurl;
+            userUPdate.job= req.body.job;
+            userUPdate.occupation= req.body.occupation;
+            userUPdate.share= req.body.share;
+            userUPdate.twitter= req.body.twitter;
+
+            var query2 = userUPdate.save();
+            query2.then(function(userUPdate_){
+                res.status(200).jsonp(response.successfulResponse(200, 'OK', userUPdate_));
+            }).catch(function(err){
+                res.status(500).send(response.errorResponse(500, err.message));
+            });
+
         }else{
-            
-            
-
-            var userUP = { $set: {
-                name: req.body.name.toUpperCase(),
-                lastName: req.body.lastName.toUpperCase(),
-                email: req.body.email.toLowerCase(),
-                linkedin: req.body.linkedin,
-                company: req.body.company,
-                telephone: req.body.telephone,
-                facebook: req.body.facebook,
-                image: req.body.image,
-                imageurl: req.body.imagenUrl,
-                job: req.body.job,
-                occupation: req.body.occupation,
-                share: req.body.share,
-                twitter: req.body.twitter
-            } };
-                var queryBusqueda = { _id: req.params.id };
-
-                    var query2 = user.update(queryBusqueda, userUP);
-                    query2.then(function(user_){
-                        var _user = {
-                            _id : user_._id,
-                            name: user.name,
-                            lastName: user.lastName,
-                            token: '',
-                            ts: Date.now()
-                        };
-                        var token = jwt.encode(_user, config.secret);
-                        _user.token = 'JWT '+ token;
-                        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
-                    }).catch(function(err_){
-                        res.status(500).send(response.errorResponse(500,labels.ERRA006,err_.message));
-                    });
+            res.status(400).jsonp(response.errorResponse(400, 'El usuario indicada no es válido'));
         }
-    } catch (handler) {
-        res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
-    }
+    }).catch(function(err){
+        res.status(500).send(response.errorResponse(500, err.message));
+    });
 };
 
 exports.getUserCard = function(req, res) {
@@ -152,7 +134,7 @@ exports.getUserCard = function(req, res) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
 };
-
+/*
 exports.addContact = function(req, res) {
     try {
         if (!response.isValidID(req.params.idUser)){
@@ -199,7 +181,7 @@ exports.addContact = function(req, res) {
     }
 
 }
-
+*/
 exports.authentication = function(req, res) {
     try {
         if(!req.body.email){
