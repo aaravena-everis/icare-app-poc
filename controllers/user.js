@@ -27,7 +27,7 @@ exports.add = function(req, res) {
                 telephone: req.body.telephone,
                 facebook: req.body.facebook,
                 image: req.body.image,
-                imageurl: req.body.imagenUrl,
+                imageurl: req.body.imageurl,
                 job: req.body.job,
                 occupation: req.body.occupation,
                 share: req.body.share,
@@ -37,7 +37,29 @@ exports.add = function(req, res) {
             var query = User.findOne({ email: user.email }).exec();
             query.then(function(checkUser){
                 if(checkUser){
-                    res.status(400).jsonp(response.errorResponse(400, labels.ERRA005));
+                    //res.status(400).jsonp(response.errorResponse(400, labels.ERRA005));
+                    var r_user = {
+                        name: checkUser.name,
+                        lastName: checkUser.lastName,
+                        email: checkUser.email,
+                        telephone: checkUser.telephone,
+                        facebook: checkUser.facebook,
+                        twitter: checkUser.twitter,
+                        linkedin: checkUser.linkedin,
+                        occupation: checkUser.occupation,
+                        company: checkUser.company,
+                        job: checkUser.job,
+                        share: req.body.share,
+                        imageurl: checkUser.imageurl,
+                        image: checkUser.image,
+                        _id: checkUser._id,
+                        token: '',
+                        ts: Date.now(),
+                        existe: true
+                    };
+                        var token = jwt.encode(_user, config.secret);
+                        _user.token = 'JWT '+ token;
+                        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
                 }else{
                     var query2 = user.save();
                     query2.then(function(user_){
@@ -46,7 +68,8 @@ exports.add = function(req, res) {
                             name: user.name,
                             lastName: user.lastName,
                             token: '',
-                            ts: Date.now()
+                            ts: Date.now(),
+                            existe: false
                         };
                         var token = jwt.encode(_user, config.secret);
                         _user.token = 'JWT '+ token;
@@ -87,7 +110,7 @@ exports.update = function(req, res) {
                 telephone: req.body.telephone,
                 facebook: req.body.facebook,
                 image: req.body.image,
-                imageurl: req.body.imagenUrl,
+                imageurl: req.body.imageurl,
                 job: req.body.job,
                 occupation: req.body.occupation,
                 share: req.body.share,
