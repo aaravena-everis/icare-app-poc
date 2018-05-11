@@ -49,7 +49,7 @@ api.route('/author/:id').get(authorCtrl.getAuthor);
 api.route('/AddUser').post(userCtrl.add);
 api.route('/user/:id').get(userCtrl.getUserCard);
 api.route('/user/:id').put(userCtrl.update);
-//api.route('/contact/:idUser/:idContact').post(userCtrl.addContact);
+api.route('/contact/:idUser/:idContact').post(userCtrl.addContact);
 api.route('/authentication').post(userCtrl.authentication);
 api.route('/event').get(eventCtrl.getAllEvents);
 api.route('/event-featured').get(eventCtrl.getFeaturedEvents);

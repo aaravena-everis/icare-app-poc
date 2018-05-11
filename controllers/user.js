@@ -157,7 +157,7 @@ exports.getUserCard = function(req, res) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
 };
-/*
+
 exports.addContact = function(req, res) {
     try {
         if (!response.isValidID(req.params.idUser)){
@@ -179,7 +179,6 @@ exports.addContact = function(req, res) {
                     if(!codeContact){
                         var newContact = {
                             idContact : req.params.idContact,
-                            dateAdd : req.body.dateAdd,
                             eventName: req.body.eventName
                         }
                         user.contacts.push(newContact);
@@ -204,7 +203,7 @@ exports.addContact = function(req, res) {
     }
 
 }
-*/
+
 exports.authentication = function(req, res) {
     try {
         if(!req.body.email){

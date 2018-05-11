@@ -31,7 +31,7 @@ var userSchema = new Schema({
 
     contacts: [{
         idContact : {type : Schema.ObjectId, ref: 'user', required: true },
-        dateAdd : { type : Date },
+        dateAdd : { type: Date, default: Date.now },
         eventName: { type: String }
     }]
 
