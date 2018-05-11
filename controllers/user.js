@@ -99,7 +99,7 @@ exports.update = function(req, res) {
             res.status(500).send(response.errorResponse(400,labels.ERRA005));
         }else{
 
-            var userUP = new User ({
+            var userUP = {
                 name: req.body.name.toUpperCase(),
                 lastName: req.body.lastName.toUpperCase(),
                 email: req.body.email.toLowerCase(),
@@ -115,25 +115,29 @@ exports.update = function(req, res) {
                 share: req.body.share,
                 twitter: req.body.twitter,
                 _id: req.params.id
-             });
+             };
 
             userUP.password = bcrypt.hashSync(userUP.password);
+            var query = User.findOne({ email: userUP.email }).exec();
+            query.then(function(userToUp){
+                var query2 = userToUp.update({"_id": req.params.id}, userUP);
+                        query2.then(function(user_){
+                            var _user = {
+                                _id : user_._id,
+                                name: user_.name,
+                                lastName: user_.lastName,
+                                token: '',
+                                ts: Date.now()
+                            };
+                            var token = jwt.encode(_user, config.secret);
+                            _user.token = 'JWT '+ token;
+                            res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
+                        }).catch(function(err_){
+                            res.status(500).send(response.errorResponse(500,labels.ERRA006,err_.message));
+                        });
+            })
 
-            var query2 = userUP.update({"_id": req.params.id});
-                    query2.then(function(user_){
-                        var _user = {
-                            _id : user_._id,
-                            name: user_.name,
-                            lastName: user_.lastName,
-                            token: '',
-                            ts: Date.now()
-                        };
-                        var token = jwt.encode(_user, config.secret);
-                        _user.token = 'JWT '+ token;
-                        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
-                    }).catch(function(err_){
-                        res.status(500).send(response.errorResponse(500,labels.ERRA006,err_.message));
-                    });
+            
         }
     } catch (handler) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
