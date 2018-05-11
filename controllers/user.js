@@ -39,6 +39,18 @@ exports.add = function(req, res) {
             query.then(function(checkUser){
                 if(checkUser){
                     var _user = {
+                        email: checkUser.email,
+                        password: checkUser.password,
+                        linkedin: checkUser.linkedin,
+                        company: checkUser.company,
+                        telephone: checkUser.telephone,
+                        facebook: rcheckUser.facebook,
+                        image: checkUser.image,
+                        imageurl: checkUser.imageurl,
+                        job: checkUser.job,
+                        occupation: checkUser.occupation,
+                        share: checkUser.share,
+                        twitter: checkUser.twitter
                         _id : checkUser._id,
                         name: checkUser.name,
                         lastName: checkUser.lastName,
