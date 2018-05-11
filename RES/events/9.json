@@ -1,0 +1,76 @@
+{
+    "_id" : ObjectId("5ad7c1c8670e82abde3511ed"),
+    "location" : {
+        "coordinates" : [],
+        "name" : "Casa Piedra",
+        "streetName" : null,
+        "streetNumber" : null,
+        "district" : null,
+        "region" : null,
+        "country" : null
+    },
+    "title" : "Mejores Pensiones para Chile",
+    "subtitle" : "Sociedad",
+    "date" : ISODate("2018-03-27T00:00:00.000Z"),
+    "time_start" : ISODate("2018-03-27T08:30:00.000Z"),
+    "time_end" : ISODate("2018-03-27T12:30:00.000Z"),
+    "archived" : true,
+    "image" : "http://www.icare.cl/assets/uploads/2018/03/pensiones-1280x540-c-default.jpg",
+    "featured" : true,
+    "description" : null,
+    "manifest" : null,
+    "ticket" : null,
+    "sessions" : [ 
+        {
+            "number" : null,
+            "name" : null,
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [],
+            "speechs" : [ 
+                {
+                    "title" : null,
+                    "author" : "Nicolás Monckeberg",
+                    "job" : "Ministro del Trabajo y Previsión Social",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/nicolas-monckeberg-10564-post-2-e1521053263697-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/presentacion-nm_icare-marzo-2018-def-compressed.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
+                {
+                    "title" : null,
+                    "author" : "Pablo Antolín",
+                    "job" : "Economista Principal y Jefe de la Unidad de Pensiones Privadas, OCDE",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/pabloantolinfoto1-e1521053624651-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/3-mejores-pensiones-para-chile-antolin-oecd.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
+                {
+                    "title" : null,
+                    "author" : "Henning Hansen",
+                    "job" : "Asesor Senior de la DFSA, Danish Financial Supervisory Authority",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/henninghansenfoto3-e1521053751450-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/4-henning-hansen-aafp-chile-27032018-final3400.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
+                {
+                    "title" : null,
+                    "author" : "Andrea Tokman",
+                    "job" : "Economista Jefe de Quiñenco S.A.",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/andrea-tokman-e1521054231867-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/5-mejores-pensiones-atokman.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }
+            ]
+        }
+    ],
+    "inscriptions" : []
+}

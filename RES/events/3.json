@@ -1,100 +1,76 @@
 {
-    "_id" : ObjectId("5ab026ddf6152036fe284e97"),
+    "_id" : ObjectId("5ad7a554670e82abde2af61d"),
     "location" : {
-        "coordinates" : [ 
-            -33.383523, 
-            -70.5886723
-        ],
-        "name" : "Casa Piedra",
-        "streetName" : "Av. San Josemaría Escrivá de Balaguer",
-        "streetNumber" : "5600",
-        "district" : "Vitacura",
-        "region" : "Region Metropolitana",
-        "country" : "Chile"
+        "coordinates" : [],
+        "name" : "HOTEL RITZ-CARLTON",
+        "streetName" : null,
+        "streetNumber" : null,
+        "district" : null,
+        "region" : null,
+        "country" : null
     },
-    "title" : "Marketing desde el origen",
-    "subtitle" : "MESA REDONDA · Círculo de Marketing",
-    "date" : ISODate("2018-04-05T00:00:00.000Z"),
-    "image" : "http://www.icare.cl/assets/uploads/2018/03/marketing-desde-el-origen--web-1-1280x540-c-default.jpg",
+    "title" : "Coyuntura Económica y Perspectivas",
+    "subtitle" : "Finanzas",
+    "date" : ISODate("2018-03-22T00:00:00.000Z"),
+    "time_start" : ISODate("2018-03-22T08:30:00.000Z"),
+    "time_end" : ISODate("2018-03-22T10:45:00.000Z"),
+    "archived" : true,
+    "image" : "http://www.icare.cl/assets/uploads/2017/11/pagina-web--bannerwebnew-ipom-2-1280x540-c-default.jpg",
     "featured" : true,
-    "description" : "<p>Esta Mesa Redonda con la que se inicia el ciclo anual del Círculo de Marketing de ICARE, aborda un dilema central de la acción de marketing, que es la <strong>consistencia</strong> entre la propuesta de valor y la experiencia de cliente y consumidor.</p><p>¿Cómo se articula el diseño, distribución y valor percibido en coherencia con la marca? ¿Cómo se gestiona una política de precios dinámica y coherente? ¿Cómo gestionamos la información disponible para hacer una inteligencia de negocios oportuna y efectiva? ¿Qué participación le conferimos a los consumidores en la creación de productos y servicios?</p>",
+    "description" : null,
     "manifest" : null,
     "ticket" : null,
     "sessions" : [ 
         {
             "number" : null,
-            "name" : null,
+            "name" : "IPoM marzo 2018",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
-            "moderators" : [ 
+            "moderators" : [],
+            "speechs" : [ 
                 {
-                    "name" : "Lorenzo Gazmuri",
-                    "job" : "Presidente del Círculo de Marketing de ICARE",
-                    "image" : "http://www.icare.cl/assets/uploads/2017/09/directorio-12-lorenzo-gazmuri-1-116x116-c-default.jpg",
-                    "rol" : "Introducción"
+                    "title" : null,
+                    "author" : "Mario Marcel",
+                    "job" : "Presidente del Banco Central de Chile",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/10/mario-marcel-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/icare_marzo-2018_v3_version-sala.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
                 }
-            ],
-            "speechs" : []
+            ]
         }, 
         {
             "number" : null,
-            "name" : "Seis estrategias para incrementar la rentabilidad de sus clientes",
+            "name" : "Perspectivas 2018",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
-            "moderators" : [ 
+            "moderators" : [],
+            "speechs" : [ 
                 {
-                    "name" : "Pablo Fernández",
-                    "job" : "CEO de MarketingTech",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/foto-pablo-fernandez-e1521233790333-120x120-c-default.jpg",
-                    "rol" : null
-                }
-            ],
-            "speechs" : []
-        }, 
-        {
-            "number" : null,
-            "name" : "Pricing del siglo XXI",
-            "description" : null,
-            "startHour" : null,
-            "finishHour" : null,
-            "moderators" : [ 
+                    "title" : null,
+                    "author" : "Manola Sánchez",
+                    "job" : "Directora Banco BCI",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/1-1-e1520621988881-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/presentacion-icare-final.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
                 {
-                    "name" : "Sergio Mendoza",
-                    "job" : "Co-founder & CEO Airnguru y Co-founder Inzpiral",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/sergio-4-120x120-c-default.jpg",
-                    "rol" : null
+                    "title" : null,
+                    "author" : "Klaus Schmidt-Hebbel",
+                    "job" : "Profesor Titular Instituto de Economía de la P. Universidad Católica de Chile",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/klaus-schmindt-hebbel-e1520622028441-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/k-schmidt-hebbel-presentacion-ipom-seminario-icare-220318.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
                 }
-            ],
-            "speechs" : []
-        }, 
-        {
-            "number" : null,
-            "name" : "Un nuevo origen: 7 tendencias claves",
-            "description" : null,
-            "startHour" : null,
-            "finishHour" : null,
-            "moderators" : [ 
-                {
-                    "name" : "Paige Maguire",
-                    "job" : "Content Design Lead de Fjord part of Accenture Interactive",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/paige-maguire-120x120-c-default.jpg",
-                    "rol" : null
-                }
-            ],
-            "speechs" : []
+            ]
         }
     ],
-    "__v" : 2,
-    "inscriptions" : [ 
-        {
-            "code" : "1234566788888888",
-            "_id" : ObjectId("5ab53e12f476290014b33fef")
-        }, 
-        {
-            "code" : "",
-            "_id" : ObjectId("5ab53e43f476290014b33ff0")
-        }
-    ]
+    "inscriptions" : []
 }

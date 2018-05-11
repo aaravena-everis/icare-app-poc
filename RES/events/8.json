@@ -1,0 +1,97 @@
+{
+    "_id" : ObjectId("5abac0c2f6152036fe41b977"),
+    "location" : {
+        "coordinates" : [ 
+            -33.383523, 
+            -70.5886723
+        ],
+        "name" : "Casa Piedra",
+        "streetName" : "Av. San Josemaría Escrivá de Balaguer",
+        "streetNumber" : "5600",
+        "district" : "Vitacura",
+        "region" : "Region Metropolitana",
+        "country" : "Chile"
+    },
+    "title" : "El buen negocio de hacer el bien",
+    "subtitle" : "Círculo Empresa y Sociedad",
+    "date" : ISODate("2018-04-19T08:30:00.000Z"),
+    "time_start" : ISODate("2018-04-19T08:30:00.000Z"),
+    "time_end" : ISODate("2018-04-19T12:30:00.000Z"),
+    "archived" : false,
+    "image" : "http://www.icare.cl/assets/uploads/2018/03/buen-negocio--web-1280x540-c-default.jpg",
+    "featured" : true,
+    "description" : "MESA REDONDA · Círculo Empresa y Sociedad",
+    "manifest" : null,
+    "ticket" : [ 
+        {
+            "type" : "Individual",
+            "memberCost" : "2 UF",
+            "generalCost" : "4 UF"
+        }
+    ],
+    "sessions" : [ 
+        {
+            "number" : null,
+            "name" : "Apertura",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Vivianne Blanlot",
+                    "job" : "Presidenta del Círculo Empresa y Sociedad de ICARE",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/10/1--vivianne-blanlot2-116x116-c-default.jpg",
+                    "rol" : "Apertura"
+                }, 
+                {
+                    "name" : "Wendy Woods",
+                    "job" : "Senior Partner & Managing Director BCG y Líder Mundial de la práctica de Impacto Social de BCG",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/wendywoods-e1522098445936-120x120-c-default.jpg",
+                    "rol" : null
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Panel CEO's",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Juan Jaime Díaz",
+                    "job" : "Sub Director de El Mercurio",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/foto-jjd-e1522336905516-116x116-c-default.jpg",
+                    "rol" : "Moderador"
+                }, 
+                {
+                    "name" : "Alfonso Swett",
+                    "job" : "Director Ejecutivo Forus",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/bs_1527-e1522337138452-120x120-c-default.jpg"
+                }, 
+                {
+                    "name" : "Hans Eben",
+                    "job" : "Director Gerente General Unilever Chile",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/hans-eben-2-e1522337258343-120x120-c-default.jpg"
+                }, 
+                {
+                    "name" : "José Manuel Moller",
+                    "job" : "Director Ejecutivo de grupo Algramo",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/jm_moller_3864164936alta-120x120-c-default.jpg"
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Preguntas y respuestas",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [],
+            "speechs" : []
+        }
+    ],
+    "inscriptions" : []
+}

@@ -1,14 +1,106 @@
 {
-    "_id" : ObjectId("5abac06ff6152036fe41b4d2"),
-    "location" : null,
-    "title" : "Mes del Mar",
-    "subtitle" : "Foro ICARE",
-    "date" : ISODate("2018-05-03T00:00:00.000Z"),
-    "image" : "http://www.icare.cl/assets/uploads/2017/12/blc_4655-1280x540-c-default.jpg",
-    "featured" : false,
-    "description" : null,
+    "_id" : ObjectId("5ab026ddf6152036fe284e97"),
+    "location" : {
+        "coordinates" : [ 
+            -33.383523, 
+            -70.5886723
+        ],
+        "name" : "Casa Piedra",
+        "streetName" : "Av. San Josemaría Escrivá de Balaguer",
+        "streetNumber" : "5600",
+        "district" : "Vitacura",
+        "region" : "Region Metropolitana",
+        "country" : "Chile"
+    },
+    "title" : "Marketing desde el origen",
+    "subtitle" : "MESA REDONDA · Círculo de Marketing",
+    "date" : ISODate("2018-04-05T00:00:00.000Z"),
+    "time_start" : ISODate("2018-04-05T08:30:00.000Z"),
+    "time_end" : ISODate("2018-04-05T10:45:00.000Z"),
+    "archived" : true,
+    "image" : "http://www.icare.cl/assets/uploads/2018/03/marketing-desde-el-origen--web-1-1280x540-c-default.jpg",
+    "featured" : true,
+    "description" : "<p>Esta Mesa Redonda con la que se inicia el ciclo anual del Círculo de Marketing de ICARE, aborda un dilema central de la acción de marketing, que es la <strong>consistencia</strong> entre la propuesta de valor y la experiencia de cliente y consumidor.</p><p>¿Cómo se articula el diseño, distribución y valor percibido en coherencia con la marca? ¿Cómo se gestiona una política de precios dinámica y coherente? ¿Cómo gestionamos la información disponible para hacer una inteligencia de negocios oportuna y efectiva? ¿Qué participación le conferimos a los consumidores en la creación de productos y servicios?</p>",
     "manifest" : null,
     "ticket" : null,
-    "sessions" : null,
+    "sessions" : [ 
+        {
+            "number" : null,
+            "name" : null,
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Lorenzo Gazmuri",
+                    "job" : "Presidente del Círculo de Marketing de ICARE",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/09/directorio-12-lorenzo-gazmuri-1-116x116-c-default.jpg",
+                    "rol" : "Introducción"
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Seis estrategias para incrementar la rentabilidad de sus clientes",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [],
+            "speechs" : [ 
+                {
+                    "title" : null,
+                    "author" : "Pablo Fernández",
+                    "job" : "CEO de MarketingTech",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/foto-pablo-fernandez-e1521233790333-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/04/icare-6r-presenta.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }
+            ]
+        }, 
+        {
+            "number" : null,
+            "name" : "Pricing del siglo XXI",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [],
+            "speechs" : [ 
+                {
+                    "title" : null,
+                    "author" : "Sergio Mendoza",
+                    "job" : "Co-founder & CEO Airnguru y Co-founder Inzpiral",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/sergio-4-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/04/pricing-del-siglo-xxi-airnguru-icare-abr-2018.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }
+            ]
+        }, 
+        {
+            "number" : null,
+            "name" : "Un nuevo origen: 7 tendencias claves",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [],
+            "speechs" : [ 
+                {
+                    "title" : null,
+                    "author" : "Paige Maguire",
+                    "job" : "Content Design Lead de Fjord part of Accenture Interactive",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/paige-maguire-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/04/3-maguire_icare_2018v2.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }
+            ]
+        }
+    ],
+    "__v" : 2,
     "inscriptions" : []
 }

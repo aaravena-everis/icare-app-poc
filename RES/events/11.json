@@ -1,0 +1,28 @@
+{
+    "_id" : ObjectId("5adf918e670e82abde50ce8a"),
+    "location" : {
+        "coordinates" : [ 
+            -33.383523, 
+            -70.5886723
+        ],
+        "name" : "Casa Piedra",
+        "streetName" : "Av. San Josemaría Escrivá de Balaguer",
+        "streetNumber" : "5600",
+        "district" : "Vitacura",
+        "region" : "Region Metropolitana",
+        "country" : "Chile"
+    },
+    "title" : "PRUEBA TODAY",
+    "subtitle" : "Foro ICARE HOY",
+    "date" : ISODate("2018-04-24T00:00:00.000Z"),
+    "time_start" : ISODate("2018-04-24T17:30:00.000Z"),
+    "time_end" : ISODate("2018-04-24T22:30:00.000Z"),
+    "archived" : false,
+    "image" : "http://www.icare.cl/assets/uploads/2017/12/blc_4655-1280x540-c-default.jpg",
+    "featured" : false,
+    "description" : null,
+    "manifest" : null,
+    "ticket" : null,
+    "sessions" : null,
+    "inscriptions" : []
+}

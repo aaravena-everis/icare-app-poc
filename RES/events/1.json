@@ -15,6 +15,9 @@
     "title" : "Urgencia con sentido",
     "subtitle" : "MESA REDONDA · Círculo de Innovación",
     "date" : ISODate("2018-05-31T00:00:00.000Z"),
+    "time_start" : ISODate("2018-05-31T08:30:00.000Z"),
+    "time_end" : ISODate("2018-05-31T10:30:00.000Z"),
+    "archived" : false,
     "image" : "http://www.icare.cl/assets/uploads/2018/03/captura-de-pantalla-2018-03-27-a-las-18-10-35-1280x540-c-default.png",
     "featured" : true,
     "description" : "Esta Mesa Redonda propone ubicar al centro de lo que hacemos, el sentido y el valor de la transformación para acelerar y agilizar los cambios que hoy se requieren. Su contenido aporta a comprender, entender el mundo de transformaciones significativas a las cuales estamos enfrentados hoy.",
@@ -38,13 +41,13 @@
                     "name" : "Emilia Díaz",
                     "job" : "Miembro del Círculo de Innovación de ICARE",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/emilia-diiaz-oficial-e1521493201584-116x116-c-default.jpg",
-                    "rol": "Conduce"
+                    "rol" : "Conduce"
                 }, 
                 {
                     "name" : "Sergio Araya",
                     "job" : "Miembro del Círculo de Innovación de ICARE",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/sergio-araya-2-e1521816793705-116x116-c-default.jpeg",
-                    "rol": "Conduce"
+                    "rol" : "Conduce"
                 }
             ],
             "speechs" : []
@@ -60,7 +63,7 @@
                     "name" : "Mónica Retamal",
                     "job" : "Directora Ejecutiva de KODEA",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/monica-retamal-e1521493329231-120x120-c-default.jpg",
-                    "rol": null
+                    "rol" : null
                 }
             ],
             "speechs" : []
@@ -76,7 +79,7 @@
                     "name" : "Mauro Valdés",
                     "job" : "Presidente Programa ALTA LEY",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/mauro-valdes--e1521493438761-120x120-c-default.jpg",
-                    "rol": null
+                    "rol" : null
                 }
             ],
             "speechs" : []
@@ -92,7 +95,7 @@
                     "name" : "Chris Stuve",
                     "job" : "Co-Fundador y Gerente General de Fracttal",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/chris_crop-e1521493796618-120x120-c-default.jpg",
-                    "rol": null
+                    "rol" : null
                 }
             ],
             "speechs" : []
@@ -108,7 +111,7 @@
                     "name" : "Mario Ogalde",
                     "job" : "Co-Fundador y Gerente General de Lifeware",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/mario-ogalde-vega-e1521636601265-120x120-c-default.jpg",
-                    "rol": null
+                    "rol" : null
                 }
             ],
             "speechs" : []

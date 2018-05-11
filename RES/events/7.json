@@ -1,23 +1,26 @@
 {
-    "_id" : ObjectId("5abac0c2f6152036fe41b977"),
+    "_id" : ObjectId("5abac0a1f6152036fe41b7a0"),
     "location" : {
         "coordinates" : [ 
-            -33.383523, 
-            -70.5886723
+            -33.5912144, 
+            -70.5820701
         ],
-        "name" : "Casa Piedra",
-        "streetName" : "Av. San Josemaría Escrivá de Balaguer",
-        "streetNumber" : "5600",
-        "district" : "Vitacura",
+        "name" : "Protectora de la Infancia",
+        "streetName" : "Av. Concha y Toro",
+        "streetNumber" : "2188",
+        "district" : "Puente Alto",
         "region" : "Region Metropolitana",
         "country" : "Chile"
     },
-    "title" : "El buen negocio de hacer el bien",
-    "subtitle" : "Círculo Empresa y Sociedad",
-    "date" : ISODate("2018-04-19T08:30:00.000Z"),
-    "image" : "http://www.icare.cl/assets/uploads/2018/03/buen-negocio--web-1280x540-c-default.jpg",
+    "title" : "Empresa y Filantropía",
+    "subtitle" : "Fortalecimiento de la Cooperación Público - Privada",
+    "date" : ISODate("2018-04-26T00:00:00.000Z"),
+    "time_start" : ISODate("2018-04-26T08:30:00.000Z"),
+    "time_end" : ISODate("2018-04-26T12:30:00.000Z"),
+    "archived" : false,
+    "image" : "http://www.icare.cl/assets/uploads/2018/03/captura-de-pantalla-2018-03-29-a-las-14-53-52-1280x540-c-default.png",
     "featured" : true,
-    "description" : "MESA REDONDA · Círculo Empresa y Sociedad",
+    "description" : "<p>El objetivo de este encuentro es discutir acerca de las fortalezas y debilidades que presenta el estado actual de la filantropía en Chile, lo que se manifiesta en desafíos históricos de la legislación existente como también las bases de la relación público-privada con el fin de cooperar en diversas áreas  de interés social.</p><p>Las ponencias buscarán identificar brevemente estos problemas y oportunidades, con una mirada del sector legislativo, mostrando proyectos exitosos y dando a conocer y comparar el rol y relevancia de la filantropía en otros países.</p>",
     "manifest" : null,
     "ticket" : [ 
         {
@@ -35,15 +38,25 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
-                    "name" : "Vivianne Blanlot",
-                    "job" : "Presidenta del Círculo Empresa y Sociedad de ICARE",
-                    "image" : "http://www.icare.cl/assets/uploads/2017/10/1--vivianne-blanlot2-116x116-c-default.jpg",
+                    "name" : "Rodrigo Velasco",
+                    "job" : "Círculo Legal de ICARE",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/rodrigo-velasco-e1522338456495-116x116-c-default.jpg",
                     "rol" : "Apertura"
-                }, 
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Filantropía: Personas y Empresas",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
                 {
-                    "name" : "Wendy Woods",
-                    "job" : "Senior Partner & Managing Director BCG y Líder Mundial de la práctica de Impacto Social de BCG",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/wendywoods-e1522098445936-120x120-c-default.jpg",
+                    "name" : "Emilio Sanfuentes",
+                    "job" : "Socio Director Corpo Comunicaciones",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/emilio-e1522338890380-120x120-c-default.jpg",
                     "rol" : null
                 }
             ],
@@ -51,42 +64,66 @@
         }, 
         {
             "number" : null,
-            "name" : "Panel CEO's",
+            "name" : "No es un cuento",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
             "moderators" : [ 
                 {
-                    "name" : "Juan Jaime Díaz",
-                    "job" : "Sub Director de El Mercurio",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/foto-jjd-e1522336905516-116x116-c-default.jpg",
-                    "rol" : "Moderador"
-                }, 
-                {
-                    "name" : "Alfonso Swett",
-                    "job" : "Director Ejecutivo Forus",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/bs_1527-e1522337138452-120x120-c-default.jpg"
-                }, 
-                {
-                    "name" : "Hans Eben",
-                    "job" : "Director Gerente General Unilever Chile",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/hans-eben-2-e1522337258343-120x120-c-default.jpg"
-                }, 
-                {
-                    "name" : "José Manuel Moller",
-                    "job" : "Director Ejecutivo de grupo Algramo",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/jm_moller_3864164936alta-120x120-c-default.jpg"
+                    "name" : "Verónica Abud",
+                    "job" : "Directora Ejecutiva de Fundación La Fuente",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/vero-abud-e1522341158407-120x120-c-default.jpeg",
+                    "rol" : null
                 }
             ],
             "speechs" : []
         }, 
         {
             "number" : null,
-            "name" : "Preguntas y respuestas",
+            "name" : "El contexto mundial de la filantropía",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
-            "moderators" : [],
+            "moderators" : [ 
+                {
+                    "name" : "Jacqueline Elías",
+                    "job" : "Director Gerente, Asesora Sénior de Filantropía, J.P. Morgan Private Bank",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/jackie-elias-1-1-e1522343865562-120x120-c-default.jpg",
+                    "rol" : null
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Un nuevo marco legal para una sociedad más solidaria",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Carlos Montes",
+                    "job" : "Presidente del Senado",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/carlos-montes-e1522343960895-120x120-c-default.jpeg",
+                    "rol" : null
+                }
+            ],
+            "speechs" : []
+        }, 
+        {
+            "number" : null,
+            "name" : "Integración e inclusión: Desafío de todos",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [ 
+                {
+                    "name" : "Alfredo Moreno",
+                    "job" : "Ministro de Desarrollo Social",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/03/alfredo-moreno-e1522344208990-120x120-c-default.jpg",
+                    "rol" : null
+                }
+            ],
             "speechs" : []
         }
     ],

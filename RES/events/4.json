@@ -1,145 +1,303 @@
 {
-    "_id" : ObjectId("5abac043f6152036fe41b227"),
+    "_id" : ObjectId("5aa6a290a94c262d389de4b7"),
     "location" : {
-            "coordinates" : [ 
-                -33.4143449, 
-                -70.6084553
-            ],
-            "name" : "Santiago Business & Conference Center",
-            "streetName" : "Av. Costanera Sur",
-            "streetNumber" : "2710",
-            "district" : "Las Condes",
-            "region" : "Region Metropolitana",
-            "country" : "Chile"
-        },
-    "title" : "La era de la mujer",
-    "subtitle" : "FORO · Mujeres al Timón Vol. 14",
-    "date" : ISODate("2018-05-10T00:00:00.000Z"),
-    "image" : "http://www.icare.cl/assets/uploads/2018/04/foro-mujeres--web-1-1280x540-c-default.jpg",
+        "coordinates" : [ 
+            -33.383523, 
+            -70.5886723
+        ],
+        "name" : "Casa Piedra",
+        "streetName" : "Av. San Josemaría Escrivá de Balaguer",
+        "streetNumber" : "5600",
+        "district" : "Vitacura",
+        "region" : "Region Metropolitana",
+        "country" : "Chile"
+    },
+    "title" : "XXVII Congreso Chileno de Marketing",
+    "subtitle" : "Días Extraños",
+    "date" : ISODate("2018-05-17T00:00:00.000Z"),
+    "time_start" : ISODate("2018-05-17T08:30:00.000Z"),
+    "time_end" : ISODate("2018-05-17T18:00:00.000Z"),
+    "archived" : false,
+    "image" : "http://www.icare.cl/assets/uploads/2017/11/pagina-web--comar2018-ok-1280x540-c-default.jpg",
     "featured" : true,
-    "description" : null,
-    "manifest" : null,
+    "description" : "<p>Hoy vivimos una profunda transformación de las estructuras económicas y las cadenas de valor de gran parte de los modelos de negocio. Esto está permitiendo, por primera vez en la historia, que billones de consumidores y ciudadanos expresen su opinión y se interrelacionen directamente; que las barreras que han protegido los negocios se derrumben y que problemas de gran escala como la movilidad y la salud pública encuentren soluciones jamás imaginadas.</p><p><b><i>“Marcada por la convergencia de tecnologías digitales, físicas y biológicas, se anticipa una revolución que cambiará el mundo tal como lo conocemos y cuyas repercusiones impactarán en cómo somos y nos relacionamos”</i></b></p><p>Con esta nueva versión del Congreso Chileno de Marketing de ICARE nos proponemos entender mejor las dimensiones y alcances de este tiempo extraño y desafiante, y aprender a vivirlos como una oportunidad para ser disruptivos, innovar, crecer y crear valor.</p>",
+    "manifest" : "<p>Un desarrollo tecnológico exponencial está acercándonos a fronteras nunca imaginadas. La penetración de las redes sociales, el desarrollo explosivo del e-commerce, la irrupción del Big Data y la Inteligencia Artificial, remecen todas las estructuras económicas, a la vez que los cambios provenientes de la ingeniería genética y las neurotecnologías afectarán lo que somos y cómo somos. A su vez, la revolución energética que se avecina es sólo parte de una marea imparable que deja poco espacio a los modelos de negocio tradicionales. Si tratamos de avizorar el impacto, sólo los vehículos autónomos -a pocos años de masificarse modificarán, entre otros, el diseño de las ciudades, la industria del tiempo libre, los seguros y una gran cantidad de empleos asociados. Esta revolución está generando tremendos impactos al reemplazar por procesos tecnológicos integrados y robotizados numerosos puestos de trabajo, con las consiguientes consecuencias políticas, sociales y culturales que ya se están expresando en distintos países.</p><p>Vivimos días extraños… Un movimiento tectónico que en poco tiempo está cambiando gran parte de las formas de trabajar de quienes buscan crear valor y compartirlo. En el ámbito del marketing, al cambio iniciado por el empoderamiento del consumidor, han seguido el cambio en la valoración de las marcas; la desintermediación y proliferación de canales y medios de pago; la omnicanalidad; integración del mundo digital a la publicidad y el más reciente Data Driven Creativity y las nuevas potencialidades para estudios del consumidor. Pero a esto seguirá una ola de cambios en los productos y su naturaleza con innovaciones que provendrán de la ingeniería genética y las neurotecnologías. Ya no sólo estamos frente a un cambio de hábitos de consumo, sino a un cambio profundo del consumidor. Son muchas las áreas de nuestro quehacer que están sufriendo cambios disruptivos como fruto de esta revolución. Sin duda se avecina una reflexión ética importante en distintos frentes y, asimismo, se hace más profunda la necesidad de incorporar los talentos apropiados para los cambios que vienen y enriquecer la inteligencia de negocios con miradas provenientes de la antropología, matemáticas, informática y otras ciencias que hoy están generando valor en los negocios.</p><p>Con esta nueva versión del Congreso Chileno de Marketing de ICARE nos proponemos entender mejor las dimensiones y alcances de este tiempo extraño y desafiante, y aprender a vivirlos como una oportunidad para ser disruptivos, innovar, crecer y crear valor.</p>",
     "ticket" : [ 
         {
             "type" : "Individual",
-            "memberCost" : "2 UF",
-            "generalCost" : "4 UF"
-        }
-    ],
-    "sessions" : [
-        {
-            "number" : null,
-            "name" : "Presentación",
-            "description" : null,
-            "startHour" : null,
-            "finishHour" : null,
-            "moderators" : [ 
-                {
-                    "name" : "Claudio Muñoz",
-                    "job" : "Presidente de ICARE",
-                    "image" : "http://www.icare.cl/assets/uploads/2017/10/2--claudio-munoz2-116x116-c-default.jpg",
-                    "rol": "Conduce"
-                }
-            ],
-            "speechs" : []
+            "memberCost" : "16 UF",
+            "generalCost" : "20 UF",
+            "_id" : ObjectId("5aa6a290a94c262d389de4a2")
         }, 
         {
-            "number" : null,
-            "name" : "Agenda de la Mujer del Gobierno",
-            "description" : null,
-            "startHour" : null,
-            "finishHour" : null,
-            "moderators" : [ 
-                {
-                    "name" : "Isabel Plá",
-                    "job" : "Ministra de la Mujer y Equidad de Género",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/04/isabel-pla-1-e1522854805737-120x120-c-default.jpg",
-                    "rol": null
-                }
-            ],
-            "speechs" : []
+            "type" : "Corporativa / 4 personas",
+            "memberCost" : "56 UF",
+            "generalCost" : "68 UF",
+            "_id" : ObjectId("5aa6a290a94c262d389de4a1")
         }, 
         {
-            "number" : null,
-            "name" : "Mujer y trabajo hoy",
-            "description" : null,
-            "startHour" : null,
-            "finishHour" : null,
-            "moderators" : [ 
-                {
-                    "name" : "Marta Calvo",
-                    "job" : "Líder de Women@BCG South América",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/04/marta-calvo-v1-e1522854934197-120x120-c-default.jpg",
-                    "rol": null
-                }
-            ],
-            "speechs" : []
-        },
+            "type" : "Corporativa / 8 personas",
+            "memberCost" : "96 UF",
+            "generalCost" : "120 UF",
+            "_id" : ObjectId("5aa6a290a94c262d389de4a0")
+        }, 
         {
-            "number" : null,
-            "name" : "Mujeres y legislación laboral",
-            "description" : null,
-            "startHour" : null,
-            "finishHour" : null,
-            "moderators" : [ 
-                {
-                    "name" : "Francisca Jünemann",
-                    "job" : "Presidenta Ejecutiva y cofundadora de Chile Mujeres",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/04/whatsapp-image-2018-04-04-at-12-19-39-e1522856310417-120x120-c-default.jpeg",
-                    "rol": null
-                }
-            ],
-            "speechs" : []
-        },
-        {
-            "number" : null,
-            "name" : "COFFE BREAK · 10:30 a 11:00 horas",
-            "description" : null,
-            "startHour" : null,
-            "finishHour" : null,
-            "moderators" : [],
-            "speechs" : []
-        } ,
-        {
-            "number" : null,
-            "name" : "Cerrando la brecha",
-            "description" : null,
-            "startHour" : null,
-            "finishHour" : null,
-            "moderators" : [ 
-                {
-                    "name" : "Soledad Onetto",
-                    "job" : null,
-                    "image" : "http://www.icare.cl/assets/uploads/2018/04/soledad-onetto-8-e1522855221603-116x116-c-default.jpg",
-                    "rol": "Moderadora"
-                },
-                {
-                    "name" : "Alejandra Aranda",
-                    "job" : "Presidenta y Socia Fundadora de Humanitas Executive Search",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/04/alejandra-aranda-e1523020059171-120x120-c-default.jpg",
-                    "rol": null
-                },
-                {
-                    "name" : "Pablo Devoto",
-                    "job" : "Gerente General de Nestlé",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/04/pablo-devoto-2-e1522855375446-120x120-c-default.jpg",
-                    "rol": null
-                },
-                {
-                    "name" : "Daniel Malchuk",
-                    "job" : "CEO de BHP Billiton",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/04/pablo-devoto-2-e1522855375446-120x120-c-default.jpg",
-                    "rol": null
-                },
-                {
-                    "name" : "Axel Leveque",
-                    "job" : "Gerente General de Engie Energía Chile",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/04/axel-leveque-2018-e1522868848349-120x120-c-default.jpg",
-                    "rol": null
-                }
-            ],
-            "speechs" : []
+            "type" : "Corporativa / 12 personas",
+            "memberCost" : "120 UF",
+            "generalCost" : "156 UF",
+            "_id" : ObjectId("5aa6a290a94c262d389de49f")
         }
     ],
+    "sessions" : [ 
+        {
+            "number" : "Sesión 1",
+            "name" : "La Transformación",
+            "description" : "La sociedad, los mercados, los negocios, las personas… todo parece estar hoy en transformación. El cambio económico, la revolución digital, los nuevos códigos culturales y las costumbres tienen lecturas líquidas que hacen difícil la planificación de largo plazo. ¿Cómo mirar y entender hoy los cambios profundos que atraviesan la clase media chilena? ¿Cómo interpretar adecuadamente los sentimientos y razones -a veces encontrados- del mayor grupo social de Chile?",
+            "startHour" : "08:30",
+            "finishHour" : "10:30",
+            "moderators" : [ 
+                {
+                    "name" : "Lorenzo Gazmuri",
+                    "job" : "Presidente del Círculo de Marketing",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/09/directorio-12-lorenzo-gazmuri-1-116x116-c-default.jpg",
+                    "rol" : "Preside"
+                }
+            ],
+            "speechs" : [ 
+                {
+                    "idAuthor" : ObjectId("5aa69d323673652288e1225b"),
+                    "title" : "La transformación de la sociedad chilena",
+                    "author" : "Othon García",
+                    "job" : "Fundador de Bitácora Social, México",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/10/othon-garcia-120x120-c-default.jpg",
+                    "description" : "¿Cómo han cambiado los chilenos y sus formas de vida? ¿Qué tan relevantes son los paradigmas de segmentación socioeconómica que usamos?",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4b5"),
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69d8c8bc0b425b4a7bdd7"),
+                    "title" : "La disrupción tecnológica",
+                    "author" : "Leo Prieto",
+                    "job" : "Socio fundador de Betazeta, FayerWayer y director de AWTO",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/2--leo-prieto-ok-e1511879138424-120x120-c-default.jpeg",
+                    "description" : "¿Qué es realmente la revolución digital? ¿Qué herramientas la habilitan? ¿Dónde están los riesgos y las nuevas oportunidades?",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4b4"),
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69dbf1c027517e4d59f63"),
+                    "title" : "Contando historias online en un escenario ultrafragmentado",
+                    "author" : "Andrés Valdivia",
+                    "job" : "Director Ejecutivo de Noise Media",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/andrees-valdiviadirector-ejecutivo-noise-media-e1510239702861-120x120-c-default.jpg",
+                    "description" : "¿Por qué los relatos son tan relevantes para el ser humano? ¿Cómo se relacionan las historias y las marcas?",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4b3"),
+                    "evaluations" : [],
+                    "comments" : []
+                }
+            ],
+            "_id" : ObjectId("5aa6a290a94c262d389de4b6")
+        }, 
+        {
+            "number" : "Sesión 2",
+            "name" : "La disrupción estratégica",
+            "description" : "¿Cuál va a ser el conjunto de disrupciones que va a cambiar nuestro negocio en los próximos cinco años? ¿Cómo las empresas deben de nir y entender mejor su negocio? ¿Qué paradigmas ya no funcionan? ¿Cómo incorporar modelos de “Marketing colaborativo” y una relación más horizontal con clientes, proveedores y distribuidores? ¿Cómo hacer frente a un desarrollo acelerado de nuevos modelos de negocio y emprendimientos de insospechados efectos agregados en el tiempo? ¿Cómo hacer un marketing vinculado a valores y propósitos trascendentes?",
+            "startHour" : "10:50",
+            "finishHour" : "12:10",
+            "moderators" : [ 
+                {
+                    "name" : "Mauricio Ríos",
+                    "job" : "Gerente General de Everis",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/09/mauricio-rios-4-e1511358355574-116x116-c-default.jpg",
+                    "rol" : "Preside"
+                }
+            ],
+            "speechs" : [ 
+                {
+                    "idAuthor" : ObjectId("5aa69de26373ae280c7194ee"),
+                    "title" : "Paradigmas que hoy ya no funcionan  ",
+                    "author" : "Alejandro Ruelas-Gossi",
+                    "job" : "Profesor de Estrategia&Innovación, Miami Business School",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/ruelas-gossi-2-e1511879179521-120x120-c-default.jpg",
+                    "description" : "¿Cómo reconocer cuando la inercia estratégica llega a su límite? ¿Qué síntomas acusan que la innovación ha llegado a una meseta?",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4b1"),
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69e039465ff27588d20ab"),
+                    "title" : "Marketing con propósito",
+                    "author" : "Luis Fernando Dugand",
+                    "job" : "Y&R-Vicepresidente para LATAM de Planeación Estratégica",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/luisfernandodugandyrlatam-e1511879228953-120x120-c-default.jpg",
+                    "description" : "¿A qué valores y bienes superiores adhiere nuestro esfuerzo de marketing? ¿Podemos ir más allá de los resultados de negocio?",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4b0"),
+                    "evaluations" : []
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69e468d651e1fa88429d4"),
+                    "title" : "Donde está tu dolor está tu pasión",
+                    "author" : "Josefa Monge",
+                    "job" : "Co-fundadora y Directora de Cumplo; Directora de Sistema B",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/6--josefa-monge-color-e1511880801502-120x120-c-default.jpg",
+                    "description" : "Crear valor desde lo que te mueve e interpela",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4af")
+                }
+            ],
+            "_id" : ObjectId("5aa6a290a94c262d389de4b2")
+        }, 
+        {
+            "number" : "Sesión 3",
+            "name" : "Gestionando la disrupción",
+            "description" : "¿Cómo se está atento a las siguientes disrupciones y a los nuevos métodos y herramientas que permitirán gestionarlas? ¿Cómo mantenerse al día en conocimientos, habilidades y ganas? ¿Puede la autorregulación ir por delante de la legislación? ¿Cómo conciliar un marketing personalizado con el valor de la privacidad y la protección de datos personales?",
+            "startHour" : "12:30",
+            "finishHour" : "14:00",
+            "moderators" : [ 
+                {
+                    "name" : "Guillermo Ponce",
+                    "job" : "Gerente General de VTR",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/09/guillermo-ponce-2-116x116-c-default.jpg",
+                    "rol" : "Preside"
+                }
+            ],
+            "speechs" : [ 
+                {
+                    "idAuthor" : ObjectId("5aa69e7df3c3942de0143a90"),
+                    "title" : "Métricas para un mundo nuevo",
+                    "author" : "Arun Arora",
+                    "job" : "Partner de McKinsey & Co.",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/7--arun-arora-2-e1511886435339-120x120-c-default.jpg",
+                    "description" : "Herramientas analíticas para una toma de decisiones basada en la información",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4ad"),
+                    "evaluations" : []
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69eb4f7ac7930b4877e1f"),
+                    "title" : "El desafío de ejecutar: Tener el talento adecuado",
+                    "author" : "Marc Alba",
+                    "job" : "Socio Global de Innovación de everis",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/8--marc-alba-e1511885109782-120x120-c-default.jpg",
+                    "description" : "Nuevos conocimientos y talentos para entender en profundidad y predecir el comportamiento de las personas",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4ac"),
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69ed8bcc14f31d8e6c642"),
+                    "title" : "Ética del uso en marketing de Inteligencia Artificial y Big Data",
+                    "author" : "Jason Jercinovic",
+                    "job" : "Global Head of Marketing Innovation de Havas Cognitive, NY, EEUU",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/9--jason-jercinovic-120x120-c-default.jpg",
+                    "description" : "Una reflexión inevitable sobre consecuencia y límites",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4ab"),
+                    "evaluations" : [],
+                    "comments" : []
+                }
+            ],
+            "_id" : ObjectId("5aa6a290a94c262d389de4ae")
+        }, 
+        {
+            "number" : "Sesión 4",
+            "name" : "Ejecución virtuosa: La estrategia en acción",
+            "description" : "Hoy la estrategia toma vida en la ejecución, porque construir una marca sólida pasa por el mundo de la experiencia y es allí donde se generan o destruyen las lealtades y la confianza. En el mundo de la experiencia, sea presencial o digital, se cumplen las promesas y toma sentido la propuesta de valor. Más que bienes y servicios, la mente del consumidor compara experiencias, aunque sean disímiles. Esta sesión del Congreso presenta 4 casos de estrategias centradas en la experiencia.",
+            "startHour" : "15:00",
+            "finishHour" : "16:15",
+            "moderators" : [ 
+                {
+                    "name" : "Verónica Edwards",
+                    "job" : "Directora de Empresas",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/09/directorio-9-veronica-edwards-1-116x116-c-default.jpg",
+                    "rol" : "Modera"
+                }, 
+                {
+                    "name" : "Max Purcell",
+                    "job" : "Gerente General GfK Adimark",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/max-purcell-e1511886573667-116x116-c-default.jpg",
+                    "rol" : "Modera"
+                }
+            ],
+            "speechs" : [ 
+                {
+                    "idAuthor" : ObjectId("5aa69eef9c368235a0f416be"),
+                    "title" : "Mall Plaza",
+                    "author" : "María Elena Guerrero",
+                    "job" : "Gerente de Marketing Corporativo",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/10--mane-guerrero-e1511885222779-120x120-c-default.jpg",
+                    "description" : " ",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a9"),
+                    "evaluations" : []
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69f0f73af4128d4c865ca"),
+                    "title" : "Work Café Banco Santander",
+                    "author" : "Matías Sánchez",
+                    "job" : "Gerente División Banca Comercial",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/11--matias-sanchez-e1511885264396-120x120-c-default.jpg",
+                    "description" : " ",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a8"),
+                    "evaluations" : []
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69f34a7d2b02fc0c59f2c"),
+                    "title" : "Unilever Chile",
+                    "author" : "Chantal Goldschmidt",
+                    "job" : "Directora de Marketing",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/12--chantal-goldschmidt-e1511885295268-120x120-c-default.jpg",
+                    "description" : " ",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a7")
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69f722596a621e44e3794"),
+                    "title" : "The not company",
+                    "author" : "Matías Muchnick",
+                    "job" : "Socio Fundador",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/13--matias-muchnick-e1511885327743-120x120-c-default.jpg",
+                    "description" : " ",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a6")
+                }
+            ],
+            "_id" : ObjectId("5aa6a290a94c262d389de4aa")
+        }, 
+        {
+            "number" : "Sesión 5",
+            "name" : "Cómo conversan las marcas hoy",
+            "description" : "¿Hacia dónde avanza el escenario de medios en el marco de la profunda revolución digital? ¿Cómo mantener la vigencia y relevancia de las marcas? Más que ser interesante para sus clientes, las empresas deben estar genuinamente interesadas en ello. ¿Cómo pueden participar las marcas de las conversaciones que articulan el cambio cultural?",
+            "startHour" : "16:30",
+            "finishHour" : "17:45",
+            "moderators" : [ 
+                {
+                    "name" : "Agatha Porte",
+                    "job" : "Presidenta Ejecutiva, Grupo BBDO & Proximity",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/0--preside-agathe-porte-e1511885382486-116x116-c-default.jpg",
+                    "rol" : "Preside"
+                }
+            ],
+            "speechs" : [ 
+                {
+                    "idAuthor" : ObjectId("5aa69f9b0fa60f0370560048"),
+                    "title" : "Adecuándose a un nuevo panorama de medios",
+                    "author" : "David Rolfe",
+                    "job" : "Director of Integrated Production de BBDO NY, EEUU",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/14--dave_rolf-120x120-c-default.jpg",
+                    "description" : "¿Cómo llegar de manera ágil, atractiva y oportuna a los clientes en el actual panorama de medios?",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a4")
+                }, 
+                {
+                    "idAuthor" : ObjectId("5aa69fc5b582202d34bd2b58"),
+                    "title" : "La cuarta revolución creativa",
+                    "author" : "Juan Carlos Ortiz",
+                    "job" : "CEO de DDB Latina y Presidente Creativo de DDB América",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/11/15--juancarlosortiz-e1511885494624-120x120-c-default.jpg",
+                    "description" : "Cuando la emoción lidera a la acción",
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a3"),
+                    "evaluations" : []
+                }
+            ],
+            "_id" : ObjectId("5aa6a290a94c262d389de4a5")
+        }
+    ],
+    "__v" : 120,
     "inscriptions" : []
 }

@@ -1,23 +1,26 @@
 {
-    "_id" : ObjectId("5abac0a1f6152036fe41b7a0"),
+    "_id" : ObjectId("5abac043f6152036fe41b227"),
     "location" : {
         "coordinates" : [ 
-            -33.5912144, 
-            -70.5820701
+            -33.4143449, 
+            -70.6084553
         ],
-        "name" : "Protectora de la Infancia",
-        "streetName" : "Av. Concha y Toro",
-        "streetNumber" : "2188",
-        "district" : "Puente Alto",
+        "name" : "Santiago Business & Conference Center",
+        "streetName" : "Av. Costanera Sur",
+        "streetNumber" : "2710",
+        "district" : "Las Condes",
         "region" : "Region Metropolitana",
         "country" : "Chile"
     },
-    "title" : "Empresa y Filantropía",
-    "subtitle" : "Fortalecimiento de la Cooperación Público - Privada",
-    "date" : ISODate("2018-04-26T00:00:00.000Z"),
-    "image" : "http://www.icare.cl/assets/uploads/2018/03/captura-de-pantalla-2018-03-29-a-las-14-53-52-1280x540-c-default.png",
+    "title" : "La era de la mujer",
+    "subtitle" : "FORO · Mujeres al Timón Vol. 14",
+    "date" : ISODate("2018-05-10T00:00:00.000Z"),
+    "time_start" : ISODate("2018-05-10T08:30:00.000Z"),
+    "time_end" : ISODate("2018-05-10T12:30:00.000Z"),
+    "archived" : false,
+    "image" : "http://www.icare.cl/assets/uploads/2018/04/foro-mujeres--web-1-1280x540-c-default.jpg",
     "featured" : true,
-    "description" : "<p>El objetivo de este encuentro es discutir acerca de las fortalezas y debilidades que presenta el estado actual de la filantropía en Chile, lo que se manifiesta en desafíos históricos de la legislación existente como también las bases de la relación público-privada con el fin de cooperar en diversas áreas  de interés social.</p><p>Las ponencias buscarán identificar brevemente estos problemas y oportunidades, con una mirada del sector legislativo, mostrando proyectos exitosos y dando a conocer y comparar el rol y relevancia de la filantropía en otros países.</p>",
+    "description" : null,
     "manifest" : null,
     "ticket" : [ 
         {
@@ -29,31 +32,31 @@
     "sessions" : [ 
         {
             "number" : null,
-            "name" : "Apertura",
+            "name" : "Presentación",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
             "moderators" : [ 
                 {
-                    "name" : "Rodrigo Velasco",
-                    "job" : "Círculo Legal de ICARE",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/rodrigo-velasco-e1522338456495-116x116-c-default.jpg",
-                    "rol" : "Apertura"
+                    "name" : "Claudio Muñoz",
+                    "job" : "Presidente de ICARE",
+                    "image" : "http://www.icare.cl/assets/uploads/2017/10/2--claudio-munoz2-116x116-c-default.jpg",
+                    "rol" : "Conduce"
                 }
             ],
             "speechs" : []
         }, 
         {
             "number" : null,
-            "name" : "Filantropía: Personas y Empresas",
+            "name" : "Agenda de la Mujer del Gobierno",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
             "moderators" : [ 
                 {
-                    "name" : "Emilio Sanfuentes",
-                    "job" : "Socio Director Corpo Comunicaciones",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/emilio-e1522338890380-120x120-c-default.jpg",
+                    "name" : "Isabel Plá",
+                    "job" : "Ministra de la Mujer y Equidad de Género",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/isabel-pla-1-e1522854805737-120x120-c-default.jpg",
                     "rol" : null
                 }
             ],
@@ -61,15 +64,15 @@
         }, 
         {
             "number" : null,
-            "name" : "No es un cuento",
+            "name" : "Mujer y trabajo hoy",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
             "moderators" : [ 
                 {
-                    "name" : "Verónica Abud",
-                    "job" : "Directora Ejecutiva de Fundación La Fuente",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/vero-abud-e1522341158407-120x120-c-default.jpeg",
+                    "name" : "Marta Calvo",
+                    "job" : "Líder de Women@BCG South América",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/marta-calvo-v1-e1522854934197-120x120-c-default.jpg",
                     "rol" : null
                 }
             ],
@@ -77,15 +80,15 @@
         }, 
         {
             "number" : null,
-            "name" : "El contexto mundial de la filantropía",
+            "name" : "Mujeres y legislación laboral",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
             "moderators" : [ 
                 {
-                    "name" : "Jacqueline Elías",
-                    "job" : "Director Gerente, Asesora Sénior de Filantropía, J.P. Morgan Private Bank",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/jackie-elias-1-1-e1522343865562-120x120-c-default.jpg",
+                    "name" : "Francisca Jünemann",
+                    "job" : "Presidenta Ejecutiva y cofundadora de Chile Mujeres",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/whatsapp-image-2018-04-04-at-12-19-39-e1522856310417-120x120-c-default.jpeg",
                     "rol" : null
                 }
             ],
@@ -93,31 +96,48 @@
         }, 
         {
             "number" : null,
-            "name" : "Un nuevo marco legal para una sociedad más solidaria",
+            "name" : "COFFE BREAK · 10:30 a 11:00 horas",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
-            "moderators" : [ 
-                {
-                    "name" : "Carlos Montes",
-                    "job" : "Presidente del Senado",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/carlos-montes-e1522343960895-120x120-c-default.jpeg",
-                    "rol" : null
-                }
-            ],
+            "moderators" : [],
             "speechs" : []
         }, 
         {
             "number" : null,
-            "name" : "Integración e inclusión: Desafío de todos",
+            "name" : "Cerrando la brecha",
             "description" : null,
             "startHour" : null,
             "finishHour" : null,
             "moderators" : [ 
                 {
-                    "name" : "Alfredo Moreno",
-                    "job" : "Ministro de Desarrollo Social",
-                    "image" : "http://www.icare.cl/assets/uploads/2018/03/alfredo-moreno-e1522344208990-120x120-c-default.jpg",
+                    "name" : "Soledad Onetto",
+                    "job" : null,
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/soledad-onetto-8-e1522855221603-116x116-c-default.jpg",
+                    "rol" : "Moderadora"
+                }, 
+                {
+                    "name" : "Alejandra Aranda",
+                    "job" : "Presidenta y Socia Fundadora de Humanitas Executive Search",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/alejandra-aranda-e1523020059171-120x120-c-default.jpg",
+                    "rol" : null
+                }, 
+                {
+                    "name" : "Pablo Devoto",
+                    "job" : "Gerente General de Nestlé",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/pablo-devoto-2-e1522855375446-120x120-c-default.jpg",
+                    "rol" : null
+                }, 
+                {
+                    "name" : "Daniel Malchuk",
+                    "job" : "CEO de BHP Billiton",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/pablo-devoto-2-e1522855375446-120x120-c-default.jpg",
+                    "rol" : null
+                }, 
+                {
+                    "name" : "Axel Leveque",
+                    "job" : "Gerente General de Engie Energía Chile",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/04/axel-leveque-2018-e1522868848349-120x120-c-default.jpg",
                     "rol" : null
                 }
             ],

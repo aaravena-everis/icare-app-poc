@@ -1,0 +1,76 @@
+{
+    "_id" : ObjectId("5ad7c4b4670e82abde36b977"),
+    "location" : {
+        "coordinates" : [],
+        "name" : "Casapiedra",
+        "streetName" : null,
+        "streetNumber" : null,
+        "district" : null,
+        "region" : null,
+        "country" : null
+    },
+    "title" : "¿Cómo viene el 2018?",
+    "subtitle" : "Foro Empresarial",
+    "date" : ISODate("2018-03-15T00:00:00.000Z"),
+    "time_start" : ISODate("2018-03-15T08:30:00.000Z"),
+    "time_end" : ISODate("2018-03-15T12:30:00.000Z"),
+    "archived" : true,
+    "image" : "http://www.icare.cl/assets/uploads/2018/01/pagina-web--como-viene-2018-1280x540-c-default.jpg",
+    "featured" : true,
+    "description" : null,
+    "manifest" : null,
+    "ticket" : null,
+    "sessions" : [ 
+        {
+            "number" : null,
+            "name" : "Economía y desarrollo social",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [],
+            "speechs" : [ 
+                {
+                    "title" : null,
+                    "author" : "Alfredo Moreno",
+                    "job" : "Ministro de Desarrollo Social",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/01/alfredo-moreno-charme-e1517342880128-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/3a-como-viene-el-2018-ministro-moreno.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }
+            ]
+        }, 
+        {
+            "number" : null,
+            "name" : "Desafíos políticos y gestión legislativa",
+            "description" : null,
+            "startHour" : null,
+            "finishHour" : null,
+            "moderators" : [],
+            "speechs" : [ 
+                {
+                    "title" : null,
+                    "author" : "Ximena Rincón",
+                    "job" : "Senadora (Democracia Cristiana)",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/01/ximenarincon-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/ppt-senadora-ximena-rincon.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }, 
+                {
+                    "title" : null,
+                    "author" : "Felipe Kast",
+                    "job" : "Senador (Evopoli)",
+                    "image" : "http://www.icare.cl/assets/uploads/2018/01/felipekast_abr2016-154-e1519912333979-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/03/fk-icare-15-03.pdf",
+                    "description" : null,
+                    "evaluations" : [],
+                    "comments" : []
+                }
+            ]
+        }
+    ],
+    "inscriptions" : []
+}
