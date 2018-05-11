@@ -48,7 +48,7 @@ exports.add = function(req, res) {
                     };
                     var token = jwt.encode(_user, config.secret);
                     _user.token = 'JWT '+ token;
-                    res.status(200).jsonp(response.errorResponse(labels.SUCC000, _user));
+                    res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
                 }else{
                     var query2 = user.save();
                     query2.then(function(user_){
