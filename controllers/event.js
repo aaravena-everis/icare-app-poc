@@ -157,7 +157,8 @@ exports.addCommentToSessionOfEvent = function(req, res) {
                         if(session._id.toString() == req.body.idSession) {
                             realCounter = counter;
                             var comment = {
-                                text : req.body.comment
+                                text : req.body.comment,
+                                userName: req.body.userName
                             };
                             session.comments.push(comment);
                             var query_res = event.save();
@@ -294,7 +295,8 @@ exports.addCommentToSpeech = function(req, res) {
                             session.speechs.forEach(function(speech){
                                 if(speech._id.toString() == req.body.idSpeech) {
                                     var comment = {
-                                        text : req.body.comment
+                                        text : req.body.comment,
+                                        userName: req.body.userName
                                     };
                                     speech.comments.push(comment);
                                     var query_res = event.save();

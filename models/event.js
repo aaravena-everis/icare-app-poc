@@ -50,7 +50,8 @@ var eventSchema = new Schema({
                 evaluation: { type : Number }
             }],
             comments:[{
-                text : { type: String }
+                text : { type: String },
+                userName : { type: String }
             }]
         }],
     }],
