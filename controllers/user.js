@@ -37,29 +37,7 @@ exports.add = function(req, res) {
             var query = User.findOne({ email: user.email }).exec();
             query.then(function(checkUser){
                 if(checkUser){
-                    //res.status(400).jsonp(response.errorResponse(400, labels.ERRA005));
-                    var r_user = {
-                        name: checkUser.name,
-                        lastName: checkUser.lastName,
-                        email: checkUser.email,
-                        telephone: checkUser.telephone,
-                        facebook: checkUser.facebook,
-                        twitter: checkUser.twitter,
-                        linkedin: checkUser.linkedin,
-                        occupation: checkUser.occupation,
-                        company: checkUser.company,
-                        job: checkUser.job,
-                        share: req.body.share,
-                        imageurl: checkUser.imageurl,
-                        image: checkUser.image,
-                        _id: checkUser._id,
-                        token: '',
-                        ts: Date.now(),
-                        existe: true
-                    };
-                    var token = jwt.encode(r_user, config.secret);
-                    r_user.token = 'JWT '+ token;
-                    res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_user));
+                    res.status(400).jsonp(response.errorResponse(400, labels.ERRA005));
                 }else{
                     var query2 = user.save();
                     query2.then(function(user_){
@@ -68,25 +46,23 @@ exports.add = function(req, res) {
                             name: user.name,
                             lastName: user.lastName,
                             token: '',
-                            ts: Date.now(),
-                            existe: false
+                            ts: Date.now()
                         };
                         var token = jwt.encode(_user, config.secret);
                         _user.token = 'JWT '+ token;
                         res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
                     }).catch(function(err_){
-                        res.status(500).send(response.errorResponse(500,"No agregó nueva",err_.message));
+                        res.status(500).send(response.errorResponse(500,labels.ERRA006,err_.message));
                     });
                 }
             }).catch(function(err){
-                res.status(500).send(response.errorResponse(500, "No encontró nada ni si ni no", err.message));
+                res.status(500).send(response.errorResponse(500,labels.ERRA006, err.message));
             });
         }
     } catch (handler) {
-        res.status(500).send(response.errorResponse(500,"El try", handler.message));
+        res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
 };
-
 
 exports.update = function(req, res){    
     var query = User.findById(req.params.id).exec();
@@ -121,66 +97,6 @@ exports.update = function(req, res){
         res.status(500).send(response.errorResponse(500, err.message));
     });
 };
-
-/*
-
-exports.update = function(req, res) {
-    try {
-        if(!req.body.name){
-            res.status(400).send(response.errorResponse(400, labels.ERRA001));
-        }else if(!req.body.lastName){
-            res.status(400).send(response.errorResponse(400, labels.ERRA002));
-        }else if(!req.body.email){
-            res.status(400).send(response.errorResponse(400, labels.ERRA003));
-        }else if (!response.isValidID(req.params.id)){
-            res.status(500).send(response.errorResponse(400,labels.ERRA005));
-        }else{
-
-            var userUP = {
-                name: req.body.name.toUpperCase(),
-                lastName: req.body.lastName.toUpperCase(),
-                email: req.body.email.toLowerCase(),
-                password: req.body.password.toLowerCase(),
-                linkedin: req.body.linkedin,
-                company: req.body.company,
-                telephone: req.body.telephone,
-                facebook: req.body.facebook,
-                image: req.body.image,
-                imageurl: req.body.imageurl,
-                job: req.body.job,
-                occupation: req.body.occupation,
-                share: req.body.share,
-                twitter: req.body.twitter,
-                _id: req.params.id
-             };
-
-            userUP.password = bcrypt.hashSync(userUP.password);
-            var query = User.findOne({ email: userUP.email }).exec();
-            query.then(function(userToUp){
-                var query2 = userToUp.update({"_id": req.params.id}, userUP);
-                        query2.then(function(user_){
-                            var _user = {
-                                _id : user_._id,
-                                name: user_.name,
-                                lastName: user_.lastName,
-                                token: '',
-                                ts: Date.now()
-                            };
-                            var token = jwt.encode(_user, config.secret);
-                            _user.token = 'JWT '+ token;
-                            res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
-                        }).catch(function(err_){
-                            res.status(500).send(response.errorResponse(500,labels.ERRA006,err_.message));
-                        });
-            })
-
-            
-        }
-    } catch (handler) {
-        res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
-    }
-};
-*/
 
 exports.getUserCard = function(req, res) {
     try {
@@ -221,29 +137,23 @@ exports.getUserCard = function(req, res) {
 exports.addContact = function(req, res) {
     try {
         if (!response.isValidID(req.params.idUser)){
-            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+                    res.status(500).send(response.errorResponse(400,labels.ERRA005));
         } else if (!response.isValidID(req.params.idContact)){
             res.status(500).send(response.errorResponse(400,labels.ERRA005));
         }else{
-
+            
             var query = User.findById(req.params.idUser).exec();
             query.then(function(user){
                 if(user) {
                     var codeContact = false;
                     user.contacts.forEach(function(contact){
-                        if(contact.idContact == req.params.idContact){
+                        if(contact == req.params.idContact){
                             codeContact = true;
                             res.status(400).jsonp(response.errorResponse(400,labels.ERRA017))
                         }
                     });
                     if(!codeContact){
-                        var newContact = {
-                            idContact : req.body.idContact,
-                            dateAdd : req.body.dateAdd,
-                            eventName: req.body.eventName
-                        }
-
-                        user.contacts.push(newContact);
+                        user.contacts.push(req.params.idContact);
                         var query_res = user.save();
                         query_res.then(function(respuesta) {
                             if(respuesta){
