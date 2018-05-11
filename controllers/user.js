@@ -75,15 +75,15 @@ exports.add = function(req, res) {
                         _user.token = 'JWT '+ token;
                         res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
                     }).catch(function(err_){
-                        res.status(500).send(response.errorResponse(500,labels.ERRA006,err_.message));
+                        res.status(500).send(response.errorResponse(500,"No agregó nueva",err_.message));
                     });
                 }
             }).catch(function(err){
-                res.status(500).send(response.errorResponse(500,labels.ERRA006, err.message));
+                res.status(500).send(response.errorResponse(500, "No encontró nada ni si ni no", err.message));
             });
         }
     } catch (handler) {
-        res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
+        res.status(500).send(response.errorResponse(500,"El try", handler.message));
     }
 };
 
@@ -231,13 +231,19 @@ exports.addContact = function(req, res) {
                 if(user) {
                     var codeContact = false;
                     user.contacts.forEach(function(contact){
-                        if(contact == req.params.idContact){
+                        if(contact.idContact == req.params.idContact){
                             codeContact = true;
                             res.status(400).jsonp(response.errorResponse(400,labels.ERRA017))
                         }
                     });
                     if(!codeContact){
-                        user.contacts.push(req.params.idContact);
+                        var newContact = {
+                            idContact : req.body.idContact,
+                            dateAdd : req.body.dateAdd,
+                            eventName: req.body.eventName
+                        }
+
+                        user.contacts.push(newContact);
                         var query_res = user.save();
                         query_res.then(function(respuesta) {
                             if(respuesta){
