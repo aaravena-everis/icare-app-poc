@@ -88,7 +88,6 @@ exports.add = function(req, res) {
 };
 
 exports.update = function(req, res) {
-    console.log("USUARIO======== "+req.params.id)
     try {
         if(!req.body.name){
             res.status(400).send(response.errorResponse(400, labels.ERRA001));
@@ -104,6 +103,7 @@ exports.update = function(req, res) {
                 name: req.body.name.toUpperCase(),
                 lastName: req.body.lastName.toUpperCase(),
                 email: req.body.email.toLowerCase(),
+                password: req.body.password.toLowerCase(),
                 linkedin: req.body.linkedin,
                 company: req.body.company,
                 telephone: req.body.telephone,
@@ -115,9 +115,10 @@ exports.update = function(req, res) {
                 share: req.body.share,
                 twitter: req.body.twitter
              });
-                var queryBusqueda = { _id: req.params.id };
 
-                    var query2 = userUP.update(queryBusqueda, { $set: userUP});
+            user.password = bcrypt.hashSync(user.password);
+
+            var query2 = userUP.save({ "_id": req.params.id }, userUP);
                     query2.then(function(user_){
                         var _user = {
                             _id : user_._id,
