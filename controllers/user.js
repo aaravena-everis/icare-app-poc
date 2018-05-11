@@ -40,6 +40,8 @@ exports.add = function(req, res) {
                     res.status(400).jsonp(response.errorResponse(400, labels.ERRA005));
                 }else{
                     var query2 = user.save();
+                    console.log("QUERY ==============")
+                    console.log(query2)
                     query2.then(function(user_){
                         var _user = {
                             _id : user_._id,

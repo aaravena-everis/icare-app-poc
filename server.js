@@ -46,7 +46,7 @@ var versionCtrl = require('./controllers/version');
 // API routes
 app.use('/api', api);
 api.route('/author/:id').get(authorCtrl.getAuthor);
-api.route('/user').post(userCtrl.add);
+api.route('/AddUser').post(userCtrl.add);
 api.route('/user/:id').get(userCtrl.getUserCard);
 api.route('/user/:id').put(userCtrl.update);
 api.route('/contact/:idUser/:idContact').post(userCtrl.addContact);
