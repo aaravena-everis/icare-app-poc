@@ -116,7 +116,7 @@ exports.update = function(req, res) {
                 twitter: req.body.twitter
              });
 
-            user.password = bcrypt.hashSync(user.password);
+            userUP.password = bcrypt.hashSync(userUP.password);
 
             var query2 = userUP.save({ "_id": req.params.id }, userUP);
                     query2.then(function(user_){
