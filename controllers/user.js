@@ -57,9 +57,9 @@ exports.add = function(req, res) {
                         ts: Date.now(),
                         existe: true
                     };
-                        var token = jwt.encode(r_user, config.secret);
-                        r_user.token = 'JWT '+ token;
-                        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_user));
+                    var token = jwt.encode(r_user, config.secret);
+                    r_user.token = 'JWT '+ token;
+                    res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_user));
                 }else{
                     var query2 = user.save();
                     query2.then(function(user_){
@@ -86,6 +86,43 @@ exports.add = function(req, res) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
 };
+
+
+exports.update = function(req, res){    
+    var query = User.findById(req.params.id).exec();
+    query.then(function(userUPdate){
+        if(userUPdate){
+            userUPdate.name = req.body.name.toUpperCase();
+            userUPdate.lastName= req.body.lastName.toUpperCase();
+            userUPdate.email= req.body.email.toLowerCase();
+            userUPdate.password= req.body.password.toLowerCase();
+            userUPdate.linkedin= req.body.linkedin;
+            userUPdate.company= req.body.company;
+            userUPdate.telephone= req.body.telephone;
+            userUPdate.facebook= req.body.facebook;
+            userUPdate.image= req.body.image;
+            userUPdate.imageurl= req.body.imageurl;
+            userUPdate.job= req.body.job;
+            userUPdate.occupation= req.body.occupation;
+            userUPdate.share= req.body.share;
+            userUPdate.twitter= req.body.twitter;
+
+            var query2 = userUPdate.save();
+            query2.then(function(userUPdate_){
+                res.status(200).jsonp(response.successfulResponse(200, 'OK', userUPdate_));
+            }).catch(function(err){
+                res.status(500).send(response.errorResponse(500, err.message));
+            });
+
+        }else{
+            res.status(400).jsonp(response.errorResponse(400, 'El usuario indicada no es válido'));
+        }
+    }).catch(function(err){
+        res.status(500).send(response.errorResponse(500, err.message));
+    });
+};
+
+/*
 
 exports.update = function(req, res) {
     try {
@@ -143,6 +180,7 @@ exports.update = function(req, res) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
 };
+*/
 
 exports.getUserCard = function(req, res) {
     try {
@@ -183,11 +221,11 @@ exports.getUserCard = function(req, res) {
 exports.addContact = function(req, res) {
     try {
         if (!response.isValidID(req.params.idUser)){
-                    res.status(500).send(response.errorResponse(400,labels.ERRA005));
+            res.status(500).send(response.errorResponse(400,labels.ERRA005));
         } else if (!response.isValidID(req.params.idContact)){
             res.status(500).send(response.errorResponse(400,labels.ERRA005));
         }else{
-            
+
             var query = User.findById(req.params.idUser).exec();
             query.then(function(user){
                 if(user) {
