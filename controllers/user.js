@@ -113,12 +113,13 @@ exports.update = function(req, res) {
                 job: req.body.job,
                 occupation: req.body.occupation,
                 share: req.body.share,
-                twitter: req.body.twitter
+                twitter: req.body.twitter,
+                _id: req.params.id
              });
 
             userUP.password = bcrypt.hashSync(userUP.password);
 
-            var query2 = userUP.save({ "_id": req.params.id });
+            var query2 = userUP.save();
                     query2.then(function(user_){
                         var _user = {
                             _id : user_._id,
