@@ -119,7 +119,7 @@ exports.update = function(req, res) {
 
             userUP.password = bcrypt.hashSync(userUP.password);
 
-            var query2 = userUP.update({_id: req.params.id)};
+            var query2 = userUP.update({_id: req.params.id});
                     query2.then(function(user_){
                         var _user = {
                             _id : user_._id,
