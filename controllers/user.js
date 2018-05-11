@@ -98,8 +98,6 @@ exports.update = function(req, res) {
         }else if (!response.isValidID(req.params.id)){
             res.status(500).send(response.errorResponse(400,labels.ERRA005));
         }else{
-            
-            
 
             var userUP = { $set: {
                 name: req.body.name.toUpperCase(),
@@ -122,8 +120,8 @@ exports.update = function(req, res) {
                     query2.then(function(user_){
                         var _user = {
                             _id : user_._id,
-                            name: user.name,
-                            lastName: user.lastName,
+                            name: user_.name,
+                            lastName: user_.lastName,
                             token: '',
                             ts: Date.now()
                         };
