@@ -34,10 +34,21 @@ exports.add = function(req, res) {
                 twitter: req.body.twitter
             });
             user.password = bcrypt.hashSync(user.password);
+
             var query = User.findOne({ email: user.email }).exec();
             query.then(function(checkUser){
                 if(checkUser){
-                    res.status(400).jsonp(response.errorResponse(400, labels.ERRA005));
+                    var _user = {
+                        _id : checkUser._id,
+                        name: checkUser.name,
+                        lastName: checkUser.lastName,
+                        token: '',
+                        ts: Date.now(),
+                        existe: true
+                    };
+                    var token = jwt.encode(_user, config.secret);
+                    _user.token = 'JWT '+ token;
+                    res.status(200).jsonp(response.errorResponse(labels.SUCC000, _user));
                 }else{
                     var query2 = user.save();
                     query2.then(function(user_){

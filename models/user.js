@@ -27,7 +27,13 @@ var userSchema = new Schema({
 	
 	createdDate : { type: Date, default: Date.now },
 	modifiedData : { type: Date, default: Date.now },
-	isEnabled : { type : Boolean, default : true, required : true }
+	isEnabled : { type : Boolean, default : true, required : true },
+
+    contacts: [{
+        idContact : {type : Schema.ObjectId, ref: 'user', required: true },
+        dateAdd : { type : Date },
+        eventName: { type: String }
+    }]
 
 });
 module.exports = mongoose.model('user', userSchema);
