@@ -57,9 +57,9 @@ exports.add = function(req, res) {
                         ts: Date.now(),
                         existe: true
                     };
-                        var token = jwt.encode(_user, config.secret);
-                        _user.token = 'JWT '+ token;
-                        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, _user));
+                        var token = jwt.encode(r_user, config.secret);
+                        r_user.token = 'JWT '+ token;
+                        res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_user));
                 }else{
                     var query2 = user.save();
                     query2.then(function(user_){
