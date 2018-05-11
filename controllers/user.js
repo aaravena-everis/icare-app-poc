@@ -50,7 +50,7 @@ exports.add = function(req, res) {
                         job: checkUser.job,
                         occupation: checkUser.occupation,
                         share: checkUser.share,
-                        twitter: checkUser.twitter
+                        twitter: checkUser.twitter,
                         _id : checkUser._id,
                         name: checkUser.name,
                         lastName: checkUser.lastName,
