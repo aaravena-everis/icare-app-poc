@@ -44,7 +44,7 @@ exports.add = function(req, res) {
                         linkedin: checkUser.linkedin,
                         company: checkUser.company,
                         telephone: checkUser.telephone,
-                        facebook: rcheckUser.facebook,
+                        facebook: checkUser.facebook,
                         image: checkUser.image,
                         imageurl: checkUser.imageurl,
                         job: checkUser.job,
