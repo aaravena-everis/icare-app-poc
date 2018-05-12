@@ -4,6 +4,7 @@ labels.SUCC000 = 'OK';
 labels.SUCC013 = 'El comentario se agregó correctamente';
 labels.SUCC014 = 'La evaluación se registró exitósamente';
 labels.SUCC015 = 'La inscripción se registró exitósamente';
+labels.SUCC016 = 'Listado de contactos mostrado exitósamente';
 /*
 labels.ERRA000 = 'Invalid Token';
 labels.ERRA001 = 'Debe ingresar un nombre';
@@ -25,6 +26,8 @@ labels.ERRA012 = 'Se ha generado un error al ingresar el comentario';
 labels.ERRA015 = 'Se ha generado un error al ingresar la evaluación';
 labels.ERRA016 = 'Se ha generado un error al ingresar la inscripción';
 labels.ERRA017 = 'El código ingresado ya fue utilizado';
+labels.EERA018 = 'Usuario no encontrado';
+
 
 
 module.exports = labels;

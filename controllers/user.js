@@ -207,7 +207,24 @@ exports.addContact = function(req, res) {
 }
 
 exports.listContacts = function(req, res) {
-
+    try {
+        if (!response.isValidID(req.params.idUser)){
+                    res.status(500).send(response.errorResponse(500,labels.ERRA005));
+        } else {
+            var query = User.findById(req.params.idUser).exec();
+            query.then(function(user){
+                if(user) {
+                    res.status(200).jsonp(response.successfulResponse(labels.SUCC016,user.contacts));
+                }else{
+                    res.status(400).jsonp(response.errorResponse(400,labels.EERA018))
+                }
+            }).catch(function(err){
+                res.status(500).jsonp(response.errorResponse(500,labels.EERA018, err.message));
+            });
+        }
+    } catch (handler) {
+        res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
+    }
 }
 
 exports.authentication = function(req, res) {
