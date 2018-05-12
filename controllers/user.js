@@ -173,7 +173,7 @@ exports.addContact = function(req, res) {
                     user.contacts.forEach(function(contact){
                         if(contact.idContact == req.body.idContact){
                             codeContact = true;
-                            res.status(400).jsonp(response.errorResponse(400,labels.ERRA017))
+                            res.status(400).jsonp(response.errorResponse(400,"Contacto ya existe"))
                         }
                     });
                     if(!codeContact){
