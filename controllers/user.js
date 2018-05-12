@@ -161,9 +161,9 @@ exports.getUserCard = function(req, res) {
 exports.addContact = function(req, res) {
     try {
         if (!response.isValidID(req.body.idUser)){
-                    res.status(500).send(response.errorResponse(400,labels.ERRA005));
+                    res.status(500).send(response.errorResponse(500,labels.ERRA005));
         } else if (!response.isValidID(req.body.idContact)){
-            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+            res.status(500).send(response.errorResponse(500,labels.ERRA005));
         }else{
             
             var query = User.findById(req.body.idUser).exec();
@@ -173,7 +173,7 @@ exports.addContact = function(req, res) {
                     user.contacts.forEach(function(contact){
                         if(contact.idContact == req.body.idContact){
                             codeContact = true;
-                            res.status(400).jsonp(response.errorResponse(400,"Contacto ya existe"))
+                            res.status(400).jsonp(response.errorResponse(400,user.contacts))
                         }
                     });
                     if(!codeContact){
@@ -187,7 +187,7 @@ exports.addContact = function(req, res) {
                         var query_res = user.save();
                         query_res.then(function(respuesta) {
                             if(respuesta){
-                                res.status(200).jsonp(response.successfulResponse(labels.SUCC015,'Contacto agregado'));
+                                res.status(200).jsonp(response.successfulResponse(labels.SUCC015,user.contacts));
                             }else{
                                 res.status(400).jsonp(response.errorResponse(400,labels.ERRA016))
                             }
@@ -203,6 +203,10 @@ exports.addContact = function(req, res) {
     } catch (handler) {
         res.status(500).send(response.errorResponse(500,labels.ERRA006, handler.message));
     }
+
+}
+
+exports.listContacts = function(req, res) {
 
 }
 

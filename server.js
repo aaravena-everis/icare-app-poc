@@ -50,6 +50,7 @@ api.route('/AddUser').post(userCtrl.add);
 api.route('/user/:id').get(userCtrl.getUserCard);
 api.route('/user/:id').put(userCtrl.update);
 api.route('/AddContact').post(userCtrl.addContact);
+api.route('/ListContacts/:idUser').get(userCtrl.listContacts);
 api.route('/authentication').post(userCtrl.authentication);
 api.route('/event').get(eventCtrl.getAllEvents);
 api.route('/event-featured').get(eventCtrl.getFeaturedEvents);
