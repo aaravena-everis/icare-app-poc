@@ -160,26 +160,28 @@ exports.getUserCard = function(req, res) {
 
 exports.addContact = function(req, res) {
     try {
-        if (!response.isValidID(req.params.idUser)){
+        if (!response.isValidID(req.body.idUser)){
                     res.status(500).send(response.errorResponse(400,labels.ERRA005));
-        } else if (!response.isValidID(req.params.idContact)){
+        } else if (!response.isValidID(req.body.idContact)){
             res.status(500).send(response.errorResponse(400,labels.ERRA005));
         }else{
             
-            var query = User.findById(req.params.idUser).exec();
+            var query = User.findById(req.body.idUser).exec();
             query.then(function(user){
                 if(user) {
                     var codeContact = false;
                     user.contacts.forEach(function(contact){
-                        if(contact.idContact == req.params.idContact){
+                        if(contact.idContact == req.body.idContact){
                             codeContact = true;
                             res.status(400).jsonp(response.errorResponse(400,labels.ERRA017))
                         }
                     });
                     if(!codeContact){
                         var newContact = {
-                            idContact : req.params.idContact,
-                            eventName: req.body.eventName
+                            idContact : req.body.idContact,
+                            eventName: req.body.eventName,
+                            contactImageurl: req.body.contactImageurl,
+                            contactName: req.body.contactName
                         }
                         user.contacts.push(newContact);
                         var query_res = user.save();
