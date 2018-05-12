@@ -46,11 +46,13 @@ var versionCtrl = require('./controllers/version');
 // API routes
 app.use('/api', api);
 api.route('/author/:id').get(authorCtrl.getAuthor);
-api.route('/AddUser').post(userCtrl.add);
-api.route('/user/:id').get(userCtrl.getUserCard);
+api.route('/addUser').post(userCtrl.add);
+api.route('/user/:id').get(userCtrl.getUserCardShort);
 api.route('/user/:id').put(userCtrl.update);
-api.route('/AddContact').post(userCtrl.addContact);
-api.route('/ListContacts/:idUser').get(userCtrl.listContacts);
+api.route('/addContact').post(userCtrl.addContact);
+api.route('/listContacts/:idUser').get(userCtrl.listContacts);
+api.route('/activeUsersList').get(userCtrl.listActiveUsers);
+api.route('/userCard/:id').get(userCtrl.getUserCard);
 api.route('/authentication').post(userCtrl.authentication);
 api.route('/event').get(eventCtrl.getAllEvents);
 api.route('/event-featured').get(eventCtrl.getFeaturedEvents);
