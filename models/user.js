@@ -34,7 +34,10 @@ var userSchema = new Schema({
         dateAdd : { type: Date, default: Date.now },
         eventName: { type: String },
         contactImageurl : { type: String },
-        contactName: { type: String }
+        contactName: { type: String },
+        contactCompany : { type: String },
+        contactJob : { type: String },
+        contactOccupation : { type: String }
     }]
 
 });

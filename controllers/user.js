@@ -122,6 +122,25 @@ exports.update = function(req, res){
     });
 };
 
+exports.updateShareState = function(req, res){    
+    var query = User.findById(req.params.idUser).exec();
+    query.then(function(userUPdate){
+        if(userUPdate){
+            userUPdate.share= req.params.share;
+            var query2 = userUPdate.save();
+            query2.then(function(userUPdate_){
+                res.status(200).jsonp(response.successfulResponse(200, 'OK SHARE UPDATE', userUPdate_));
+            }).catch(function(err){
+                res.status(500).send(response.errorResponse(500, err.message));
+            });
+        }else{
+            res.status(400).jsonp(response.errorResponse(400, 'El usuario indicada no es válido'));
+        }
+    }).catch(function(err){
+        res.status(500).send(response.errorResponse(500, err.message));
+    });
+};
+
 exports.getUserCardShort = function(req, res) {
     try {
         if (!response.isValidID(req.params.id)){
@@ -204,7 +223,21 @@ exports.addContact = function(req, res) {
                     user.contacts.forEach(function(contact){
                         if(contact.idContact == req.body.idContact){
                             codeContact = true;
-                            res.status(400).jsonp(response.errorResponse(400,user.contacts))
+
+                            contact.idContact= req.body.idContact;
+                            contact.eventName= req.body.eventName;
+                            contact.contactImageurl= req.body.contactImageurl;
+                            contact.contactName= req.body.contactName;
+                            contact.contactCompany= req.body.contactCompany;
+                            contact.contactJob= req.body.contactJob;
+                            contact.contactOccupation= req.body.contactOccupation;
+
+                            var query2 = user.save();
+                            query2.then(function(user_){
+                                res.status(200).jsonp(response.successfulResponse(200, 'UPDATE OK', user_.contacts));
+                            }).catch(function(err){
+                                res.status(500).send(response.errorResponse(500, err.message));
+                            });
                         }
                     });
                     if(!codeContact){
@@ -212,8 +245,12 @@ exports.addContact = function(req, res) {
                             idContact : req.body.idContact,
                             eventName: req.body.eventName,
                             contactImageurl: req.body.contactImageurl,
-                            contactName: req.body.contactName
+                            contactName: req.body.contactName,
+                            contactCompany: req.body. contactCompany,
+                            contactJob: req.body. contactJob,
+                            contactOccupation: req.body. contactOccupation
                         }
+
                         user.contacts.push(newContact);
                         var query_res = user.save();
                         query_res.then(function(respuesta) {
