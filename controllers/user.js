@@ -144,7 +144,7 @@ exports.updateShareState = function(req, res){
 exports.getUserCardShort = function(req, res) {
     try {
         if (!response.isValidID(req.params.id)){
-            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+            res.status(500).send(response.errorResponse(500,labels.ERRA005));
         }else{
             var query = User.findById(req.params.id).exec();
             query.then(function(user){
@@ -161,7 +161,7 @@ exports.getUserCardShort = function(req, res) {
                     };
                     res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_user));
                 }else{
-                    res.status(400).jsonp(response.errorResponse(400,labels.ERRA007))
+                    res.status(400).jsonp(response.errorResponse(400,labels.EERA018))
                 }
             }).catch(function(err){
                 res.status(500).jsonp(response.errorResponse(500,labels.ERRA006, err.message));
@@ -175,7 +175,7 @@ exports.getUserCardShort = function(req, res) {
 exports.getUserCard = function(req, res) {
     try {
         if (!response.isValidID(req.params.id)){
-            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+            res.status(500).send(response.errorResponse(500,labels.ERRA005));
         }else{
             var query = User.findById(req.params.id).exec();
             query.then(function(user){
@@ -197,7 +197,7 @@ exports.getUserCard = function(req, res) {
                     };
                     res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_user));
                 }else{
-                    res.status(400).jsonp(response.errorResponse(400,labels.ERRA007))
+                    res.status(400).jsonp(response.errorResponse(400,labels.EERA018))
                 }
             }).catch(function(err){
                 res.status(500).jsonp(response.errorResponse(500,labels.ERRA006, err.message));
