@@ -53,7 +53,7 @@ api.route('/addContact').post(userCtrl.addContact);
 api.route('/listContacts/:idUser').get(userCtrl.listContacts);
 api.route('/activeUsersList').get(userCtrl.listActiveUsers);
 api.route('/userCard/:id').get(userCtrl.getUserCard);
-api.route('/userShare/:idUser/:share').get(userCtrl.updateShareState);
+api.route('/userShare/:idUser/:share').put(userCtrl.updateShareState);
 api.route('/authentication').post(userCtrl.authentication);
 api.route('/event').get(eventCtrl.getAllEvents);
 api.route('/event-featured').get(eventCtrl.getFeaturedEvents);
