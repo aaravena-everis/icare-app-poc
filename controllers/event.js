@@ -8,7 +8,7 @@ var Event = mongoose.model('event');
 exports.getAllEvents = function(req, res) {
     var today = new Date();
     //today.setHours(-3,0,0,0);
-    today.setHours(today.getHours()-3)
+    today.setHours(today.getHours()-4)
 
     var query = Event.find({time_end: {$gte: today}}).exec();
     //var query = Event.find({}).exec();
@@ -35,7 +35,7 @@ exports.getAllEvents = function(req, res) {
 exports.getFeaturedEvents = function(req, res) {
     var today = new Date();
     //today.setHours(-3,0,0,0);
-    today.setHours(today.getHours()-3)
+    today.setHours(today.getHours()-4)
 
     var query = Event.find({time_end: {$gte: today}, "featured": true }).exec();
     //var query = Event.find({"featured": true }).exec();
@@ -62,7 +62,7 @@ exports.getFeaturedEvents = function(req, res) {
 exports.getArchiveEvents = function(req, res) {
     var today = new Date();
     //today.setHours(-3,0,0,0);
-    today.setHours(today.getHours()-3)
+    today.setHours(today.getHours()-4)
 
     var query = Event.find({time_start: {$lte: today}, "archived": true, "featured": true}).exec();
     //var query = Event.find({"archived": true }).exec();
@@ -93,8 +93,8 @@ exports.getTodayEvent = function(req, res) {
     var today2 = new Date();
     console.log(today)
     //today.setHours(-3,0,0,0);
-    today.setHours(today.getHours()-3)
-    today2.setHours(today2.getHours()-1)
+    today.setHours(today.getHours()-4)
+    today2.setHours(today2.getHours()-2)
     console.log(today)
     console.log(today2)
 
