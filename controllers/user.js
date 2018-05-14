@@ -109,7 +109,7 @@ exports.update = function(req, res){
 
             var query2 = userUPdate.save();
             query2.then(function(userUPdate_){
-                res.status(200).jsonp(response.successfulResponse(200, 'OK', userUPdate_));
+                res.status(200).jsonp(response.successfulResponse('OK', userUPdate_));
             }).catch(function(err){
                 res.status(500).send(response.errorResponse(500, err.message));
             });
@@ -129,7 +129,7 @@ exports.updateShareState = function(req, res){
             userUPdate.share= req.params.share;
             var query2 = userUPdate.save();
             query2.then(function(userUPdate_){
-                res.status(200).jsonp(response.successfulResponse(200, 'OK SHARE UPDATE', userUPdate_));
+                res.status(200).jsonp(response.successfulResponse('OK SHARE UPDATE', userUPdate_));
             }).catch(function(err){
                 res.status(500).send(response.errorResponse(500, err.message));
             });
@@ -234,7 +234,7 @@ exports.addContact = function(req, res) {
 
                             var query2 = user.save();
                             query2.then(function(user_){
-                                res.status(200).jsonp(response.successfulResponse(200, 'UPDATE OK', user_.contacts));
+                                res.status(200).jsonp(response.successfulResponse('UPDATE OK', user_.contacts));
                             }).catch(function(err){
                                 res.status(500).send(response.errorResponse(500, err.message));
                             });
