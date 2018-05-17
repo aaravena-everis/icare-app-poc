@@ -296,7 +296,7 @@ exports.listContacts = function(req, res) {
 }
 
 exports.listActiveUsers = function(req, res) {
-    var query = User.find({"share": true}).exec();
+    var query = User.find({"share": true}).sort( { lastName: 1 } ).exec();
 
     var r_user_list= [];
     query.then(function(users){
@@ -313,6 +313,7 @@ exports.listActiveUsers = function(req, res) {
             };
             r_user_list.push(r_user);
         });
+
         res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_user_list));
     }).catch(function(err){
         res.status(500).jsonp(response.errorResponse(500,labels.ERRA006, err.message));
