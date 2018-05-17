@@ -20,7 +20,6 @@ exports.getStreamUrl = function(req, res) {
                 urlStream: streamUrl.urlStream,
                 active: streamUrl.active,
             };
-            
         });
         res.status(200).jsonp(response.successfulResponse(labels.SUCC000, r_stream));
     }).catch(function(err){
