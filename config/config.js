@@ -5,16 +5,23 @@ config.dbOptions = {
     db: { native_parser: true },
     server: {
         poolSize: 10,
-        reconnectTries: Number.MAX_VALUE
+        reconnectTries: Number.MAX_VALUE,
+        //ssl: true
     },
-        //user: 'icare-dev',
-        //pass: 'icare-dev'
-    	user: 'usuario1',
-        pass: 'clave1'
+    //user: 'icappmongo',
+    //pass: '58Ozdus3NFfPf5pky1PF5LpINEsz2oBTHiPXq28QRRIzUIQf2h00VZfwK3Zwf17mwIIWWWOmonG6BSiCUUd2sQ=='
+    user: 'icare-dev',
+    pass: 'icare-dev'
 };
+//DEV
+config.dbEndpoint = 'mongodb://ds053218.mlab.com:53218/heroku_4m0g8nhg'; 
 
-//config.dbEndpoint = 'mongodb://ds053218.mlab.com:53218/heroku_4m0g8nhg';
-config.dbEndpoint = 'mongodb://13.90.142.201:27017/app_qa'; 
+//TESTING
+//config.dbEndpoint = 'mongodb://icappmongo.documents.azure.com:10255/mobile_testing?ssl=true&replicaSet=globaldb';
+
+//PRODUCCION
+//config.dbEndpoint = 'mongodb://icappmongo.documents.azure.com:10255/mobileapp?ssl=true&replicaSet=globaldb';
+
 config.web.port = process.env.PORT || 8080;
-config.secret = 'URsltltR453Cr3TP4sSW0Rd';
+config.secret = 'BkBUltR453Cr3TP4sSW0Rd';
 module.exports = config;
