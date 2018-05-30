@@ -25,6 +25,7 @@
     "ticket" : null,
     "sessions" : [ 
         {
+            "_id" : ObjectId("5b0ec62514aa33e1687b8aa0"),
             "number" : null,
             "name" : null,
             "description" : null,
@@ -32,6 +33,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec62a97d6daa390ad7f6e"),
                     "name" : "Lorenzo Gazmuri",
                     "job" : "Presidente del Círculo de Marketing de ICARE",
                     "image" : "http://www.icare.cl/assets/uploads/2017/09/directorio-12-lorenzo-gazmuri-1-116x116-c-default.jpg",
@@ -41,6 +43,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec62e9006831bcd41ee96"),
             "number" : null,
             "name" : "Seis estrategias para incrementar la rentabilidad de sus clientes",
             "description" : null,
@@ -49,6 +52,7 @@
             "moderators" : [],
             "speechs" : [ 
                 {
+                    "_id" : ObjectId("5b0ec6349a3298a25e3d4f95"),
                     "title" : null,
                     "author" : "Pablo Fernández",
                     "job" : "CEO de MarketingTech",
@@ -61,6 +65,7 @@
             ]
         }, 
         {
+            "_id" : ObjectId("5b0ec6399211d1146faebd94"),
             "number" : null,
             "name" : "Pricing del siglo XXI",
             "description" : null,
@@ -69,6 +74,7 @@
             "moderators" : [],
             "speechs" : [ 
                 {
+                    "_id" : ObjectId("5b0ec63e5a14fe8a4b8f4304"),
                     "title" : null,
                     "author" : "Sergio Mendoza",
                     "job" : "Co-founder & CEO Airnguru y Co-founder Inzpiral",
@@ -81,6 +87,7 @@
             ]
         }, 
         {
+            "_id" : ObjectId("5b0ec64204af096f8f364cba"),
             "number" : null,
             "name" : "Un nuevo origen: 7 tendencias claves",
             "description" : null,
@@ -89,6 +96,7 @@
             "moderators" : [],
             "speechs" : [ 
                 {
+                    "_id" : ObjectId("5b0ec6476b439ccac94aecd6"),
                     "title" : null,
                     "author" : "Paige Maguire",
                     "job" : "Content Design Lead de Fjord part of Accenture Interactive",
@@ -102,5 +110,14 @@
         }
     ],
     "__v" : 2,
-    "inscriptions" : []
+    "inscriptions" : [ 
+        {
+            "code" : "1234566788888888",
+            "_id" : ObjectId("5ab53e12f476290014b33fef")
+        }, 
+        {
+            "code" : "",
+            "_id" : ObjectId("5ab53e43f476290014b33ff0")
+        }
+    ]
 }

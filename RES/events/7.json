@@ -31,6 +31,7 @@
     ],
     "sessions" : [ 
         {
+            "_id" : ObjectId("5b0ec9ad48cf754c773ad9aa"),
             "number" : null,
             "name" : "Apertura",
             "description" : null,
@@ -38,6 +39,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec9b3ad0a34fbcaf120ce"),
                     "name" : "Rodrigo Velasco",
                     "job" : "Círculo Legal de ICARE",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/rodrigo-velasco-e1522338456495-116x116-c-default.jpg",
@@ -47,6 +49,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ecb459efa422ebfaf7054"),
             "number" : null,
             "name" : "Filantropía: Personas y Empresas",
             "description" : null,
@@ -54,6 +57,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ecb4bfb55a437028cfcfc"),
                     "name" : "Emilio Sanfuentes",
                     "job" : "Socio Director Corpo Comunicaciones",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/emilio-e1522338890380-120x120-c-default.jpg",
@@ -63,6 +67,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ecb51f0f2668654fe97bc"),
             "number" : null,
             "name" : "No es un cuento",
             "description" : null,
@@ -70,6 +75,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ecb569db0b26de6e77a09"),
                     "name" : "Verónica Abud",
                     "job" : "Directora Ejecutiva de Fundación La Fuente",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/vero-abud-e1522341158407-120x120-c-default.jpeg",
@@ -79,6 +85,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ecb5b461d054061a88b63"),
             "number" : null,
             "name" : "El contexto mundial de la filantropía",
             "description" : null,
@@ -86,6 +93,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ecb659a3d523ca846ed94"),
                     "name" : "Jacqueline Elías",
                     "job" : "Director Gerente, Asesora Sénior de Filantropía, J.P. Morgan Private Bank",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/jackie-elias-1-1-e1522343865562-120x120-c-default.jpg",
@@ -95,6 +103,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ecb693544182f829c62eb"),
             "number" : null,
             "name" : "Un nuevo marco legal para una sociedad más solidaria",
             "description" : null,
@@ -102,6 +111,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ecb6d68a5d963c0be8822"),
                     "name" : "Carlos Montes",
                     "job" : "Presidente del Senado",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/carlos-montes-e1522343960895-120x120-c-default.jpeg",
@@ -111,6 +121,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ecbf16ba5338b9e5fb986"),
             "number" : null,
             "name" : "Integración e inclusión: Desafío de todos",
             "description" : null,
@@ -118,6 +129,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ecbff98c9a6447c9d26f1"),
                     "name" : "Alfredo Moreno",
                     "job" : "Ministro de Desarrollo Social",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/alfredo-moreno-e1522344208990-120x120-c-default.jpg",

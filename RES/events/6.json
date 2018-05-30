@@ -31,6 +31,7 @@
     ],
     "sessions" : [ 
         {
+            "_id" : ObjectId("5b0ec9559c719a074f85388c"),
             "number" : null,
             "name" : "Presentación",
             "description" : null,
@@ -38,6 +39,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec95a0bddb4c932d8adcc"),
                     "name" : "Claudio Muñoz",
                     "job" : "Presidente de ICARE",
                     "image" : "http://www.icare.cl/assets/uploads/2017/10/2--claudio-munoz2-116x116-c-default.jpg",
@@ -47,6 +49,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec95f619b64b9d71c1819"),
             "number" : null,
             "name" : "Agenda de la Mujer del Gobierno",
             "description" : null,
@@ -54,6 +57,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec963594bd018631edda3"),
                     "name" : "Isabel Plá",
                     "job" : "Ministra de la Mujer y Equidad de Género",
                     "image" : "http://www.icare.cl/assets/uploads/2018/04/isabel-pla-1-e1522854805737-120x120-c-default.jpg",
@@ -63,6 +67,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec96936b809550d62abb1"),
             "number" : null,
             "name" : "Mujer y trabajo hoy",
             "description" : null,
@@ -70,6 +75,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec96f363bd5e4cc2a99d3"),
                     "name" : "Marta Calvo",
                     "job" : "Líder de Women@BCG South América",
                     "image" : "http://www.icare.cl/assets/uploads/2018/04/marta-calvo-v1-e1522854934197-120x120-c-default.jpg",
@@ -79,6 +85,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec97314ecf83098dcec51"),
             "number" : null,
             "name" : "Mujeres y legislación laboral",
             "description" : null,
@@ -86,6 +93,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec978eec21aaa9829e641"),
                     "name" : "Francisca Jünemann",
                     "job" : "Presidenta Ejecutiva y cofundadora de Chile Mujeres",
                     "image" : "http://www.icare.cl/assets/uploads/2018/04/whatsapp-image-2018-04-04-at-12-19-39-e1522856310417-120x120-c-default.jpeg",
@@ -95,6 +103,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec97db5590b7ff0cda53e"),
             "number" : null,
             "name" : "COFFE BREAK · 10:30 a 11:00 horas",
             "description" : null,
@@ -104,6 +113,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec9825889327cbd35d53b"),
             "number" : null,
             "name" : "Cerrando la brecha",
             "description" : null,
@@ -111,30 +121,35 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec98714aa14735261aacb"),
                     "name" : "Soledad Onetto",
                     "job" : null,
                     "image" : "http://www.icare.cl/assets/uploads/2018/04/soledad-onetto-8-e1522855221603-116x116-c-default.jpg",
                     "rol" : "Moderadora"
                 }, 
                 {
+                    "_id" : ObjectId("5b0ec99a6d203e26c63b9f2b"),
                     "name" : "Alejandra Aranda",
                     "job" : "Presidenta y Socia Fundadora de Humanitas Executive Search",
                     "image" : "http://www.icare.cl/assets/uploads/2018/04/alejandra-aranda-e1523020059171-120x120-c-default.jpg",
                     "rol" : null
                 }, 
                 {
+                    "_id" : ObjectId("5b0ec99ee1ef56fca658eb99"),
                     "name" : "Pablo Devoto",
                     "job" : "Gerente General de Nestlé",
                     "image" : "http://www.icare.cl/assets/uploads/2018/04/pablo-devoto-2-e1522855375446-120x120-c-default.jpg",
                     "rol" : null
                 }, 
                 {
+                    "_id" : ObjectId("5b0ec9a32b051838a4ec7113"),
                     "name" : "Daniel Malchuk",
                     "job" : "CEO de BHP Billiton",
                     "image" : "http://www.icare.cl/assets/uploads/2018/04/pablo-devoto-2-e1522855375446-120x120-c-default.jpg",
                     "rol" : null
                 }, 
                 {
+                    "_id" : ObjectId("5b0ec9a79a3073fe25b2da65"),
                     "name" : "Axel Leveque",
                     "job" : "Gerente General de Engie Energía Chile",
                     "image" : "http://www.icare.cl/assets/uploads/2018/04/axel-leveque-2018-e1522868848349-120x120-c-default.jpg",

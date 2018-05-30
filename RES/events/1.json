@@ -1,5 +1,5 @@
 {
-    "_id" : ObjectId("5abac00ef6152036fe41aea8"),
+    "_id" : ObjectId("5afc9f49e4da9cb1bb7a92f9"),
     "location" : {
         "coordinates" : [ 
             -33.383523, 
@@ -31,6 +31,7 @@
     ],
     "sessions" : [ 
         {
+            "_id" : ObjectId("5b0ec4d2d5cb2aa370412465"),
             "number" : null,
             "name" : "Presentación",
             "description" : null,
@@ -38,12 +39,14 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec4dc096138dbe00407fa"),
                     "name" : "Emilia Díaz",
                     "job" : "Miembro del Círculo de Innovación de ICARE",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/emilia-diiaz-oficial-e1521493201584-116x116-c-default.jpg",
                     "rol" : "Conduce"
                 }, 
                 {
+                    "_id" : ObjectId("5b0ec4e2c5774de96512c242"),
                     "name" : "Sergio Araya",
                     "job" : "Miembro del Círculo de Innovación de ICARE",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/sergio-araya-2-e1521816793705-116x116-c-default.jpeg",
@@ -53,6 +56,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec4e71917f681f6d98c1c"),
             "number" : "URGENCIA 1",
             "name" : "Talentos y capacidades para el mundo digital",
             "description" : null,
@@ -60,6 +64,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec4ed9424a787e9e694fd"),
                     "name" : "Mónica Retamal",
                     "job" : "Directora Ejecutiva de KODEA",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/monica-retamal-e1521493329231-120x120-c-default.jpg",
@@ -69,6 +74,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec4f28d9f1a5ad2dd64c3"),
             "number" : "URGENCIA 2",
             "name" : "De los recursos naturales al conocimiento: Transformación de la industria",
             "description" : null,
@@ -76,6 +82,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec4f99b325584e390b078"),
                     "name" : "Mauro Valdés",
                     "job" : "Presidente Programa ALTA LEY",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/mauro-valdes--e1521493438761-120x120-c-default.jpg",
@@ -85,6 +92,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec5bb339bf0479f902f65"),
             "number" : "URGENCIA 3",
             "name" : "Internet de las cosas y gestión de activos",
             "description" : null,
@@ -92,6 +100,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec5c19bd1efef6a06bc57"),
                     "name" : "Chris Stuve",
                     "job" : "Co-Fundador y Gerente General de Fracttal",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/chris_crop-e1521493796618-120x120-c-default.jpg",
@@ -101,6 +110,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec5c66486125e45e2affe"),
             "number" : "URGENCIA 4",
             "name" : "Inclusión de otras capacidades",
             "description" : null,
@@ -108,6 +118,7 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec5cbf33e9c2a0b870b6a"),
                     "name" : "Mario Ogalde",
                     "job" : "Co-Fundador y Gerente General de Lifeware",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/mario-ogalde-vega-e1521636601265-120x120-c-default.jpg",
@@ -117,6 +128,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0ec5d0438c2c5049e7210b"),
             "number" : "URGENCIA 5",
             "name" : "Conversación",
             "description" : null,

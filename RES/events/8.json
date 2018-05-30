@@ -31,6 +31,7 @@
     ],
     "sessions" : [ 
         {
+            "_id" : ObjectId("5b0ecc4638458627939e9f9e"),
             "number" : null,
             "name" : "Apertura",
             "description" : null,
@@ -38,12 +39,14 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ecc5255175373ddd7e090"),
                     "name" : "Vivianne Blanlot",
                     "job" : "Presidenta del Círculo Empresa y Sociedad de ICARE",
                     "image" : "http://www.icare.cl/assets/uploads/2017/10/1--vivianne-blanlot2-116x116-c-default.jpg",
                     "rol" : "Apertura"
                 }, 
                 {
+                    "_id" : ObjectId("5b0ecc586a934df8b277abc4"),
                     "name" : "Wendy Woods",
                     "job" : "Senior Partner & Managing Director BCG y Líder Mundial de la práctica de Impacto Social de BCG",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/wendywoods-e1522098445936-120x120-c-default.jpg",
@@ -53,6 +56,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0eccd311160a1bc177cd59"),
             "number" : null,
             "name" : "Panel CEO's",
             "description" : null,
@@ -60,22 +64,26 @@
             "finishHour" : null,
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0eccd9f34c03f64cc0868d"),
                     "name" : "Juan Jaime Díaz",
                     "job" : "Sub Director de El Mercurio",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/foto-jjd-e1522336905516-116x116-c-default.jpg",
                     "rol" : "Moderador"
                 }, 
                 {
+                    "_id" : ObjectId("5b0eccde666fb5445a0e4fda"),
                     "name" : "Alfonso Swett",
                     "job" : "Director Ejecutivo Forus",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/bs_1527-e1522337138452-120x120-c-default.jpg"
                 }, 
                 {
+                    "_id" : ObjectId("5b0ecce3b36405e0fcec2627"),
                     "name" : "Hans Eben",
                     "job" : "Director Gerente General Unilever Chile",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/hans-eben-2-e1522337258343-120x120-c-default.jpg"
                 }, 
                 {
+                    "_id" : ObjectId("5b0ecce70eaf3a6b0965c9bb"),
                     "name" : "José Manuel Moller",
                     "job" : "Director Ejecutivo de grupo Algramo",
                     "image" : "http://www.icare.cl/assets/uploads/2018/03/jm_moller_3864164936alta-120x120-c-default.jpg"
@@ -84,6 +92,7 @@
             "speechs" : []
         }, 
         {
+            "_id" : ObjectId("5b0eccec8952e117089d1427"),
             "number" : null,
             "name" : "Preguntas y respuestas",
             "description" : null,

@@ -7,7 +7,7 @@ var StreamBD = mongoose.model('stream-url');
 exports.getStreamUrl = function(req, res) {
     var query = StreamBD.find({}).exec();
     query.then(function(streamUrls){
-        console.log("---STREAMURLS---")
+        var r_stream
         streamUrls.forEach(function(streamUrl){
             r_stream = {
                 urlStream: streamUrl.urlStream,

@@ -1,5 +1,5 @@
 {
-    "_id" : ObjectId("5ad7a554670e82abde2af61d"),
+    "_id" : ObjectId("5afca2a8e4da9cb1bb7a92fb"),
     "location" : {
         "coordinates" : [],
         "name" : "HOTEL RITZ-CARLTON",
@@ -22,6 +22,7 @@
     "ticket" : null,
     "sessions" : [ 
         {
+            "_id" : ObjectId("5b0ec5d654a431d798c37b74"),
             "number" : null,
             "name" : "IPoM marzo 2018",
             "description" : null,
@@ -30,6 +31,7 @@
             "moderators" : [],
             "speechs" : [ 
                 {
+                    "_id" : ObjectId("5b0ec5da963eb6042d0cc43f"),
                     "title" : null,
                     "author" : "Mario Marcel",
                     "job" : "Presidente del Banco Central de Chile",
@@ -42,6 +44,7 @@
             ]
         }, 
         {
+            "_id" : ObjectId("5b0ec5df8d5e19698f0d9317"),
             "number" : null,
             "name" : "Perspectivas 2018",
             "description" : null,
@@ -50,6 +53,7 @@
             "moderators" : [],
             "speechs" : [ 
                 {
+                    "_id" : ObjectId("5b0ec5e572f8e916aa4a1b30"),
                     "title" : null,
                     "author" : "Manola Sánchez",
                     "job" : "Directora Banco BCI",
@@ -60,6 +64,7 @@
                     "comments" : []
                 }, 
                 {
+                    "_id" : ObjectId("5b0ec5eaf8063ed9988d1da0"),
                     "title" : null,
                     "author" : "Klaus Schmidt-Hebbel",
                     "job" : "Profesor Titular Instituto de Economía de la P. Universidad Católica de Chile",

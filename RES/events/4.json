@@ -1,5 +1,5 @@
 {
-    "_id" : ObjectId("5aa6a290a94c262d389de4b7"),
+    "_id" : ObjectId("5afcacaf8c06b4d4358b6337"),
     "location" : {
         "coordinates" : [ 
             -33.383523, 
@@ -17,7 +17,7 @@
     "date" : ISODate("2018-05-17T00:00:00.000Z"),
     "time_start" : ISODate("2018-05-17T08:30:00.000Z"),
     "time_end" : ISODate("2018-05-17T18:00:00.000Z"),
-    "archived" : false,
+    "archived" : true,
     "image" : "http://www.icare.cl/assets/uploads/2017/11/pagina-web--comar2018-ok-1280x540-c-default.jpg",
     "featured" : true,
     "description" : "<p>Hoy vivimos una profunda transformación de las estructuras económicas y las cadenas de valor de gran parte de los modelos de negocio. Esto está permitiendo, por primera vez en la historia, que billones de consumidores y ciudadanos expresen su opinión y se interrelacionen directamente; que las barreras que han protegido los negocios se derrumben y que problemas de gran escala como la movilidad y la salud pública encuentren soluciones jamás imaginadas.</p><p><b><i>“Marcada por la convergencia de tecnologías digitales, físicas y biológicas, se anticipa una revolución que cambiará el mundo tal como lo conocemos y cuyas repercusiones impactarán en cómo somos y nos relacionamos”</i></b></p><p>Con esta nueva versión del Congreso Chileno de Marketing de ICARE nos proponemos entender mejor las dimensiones y alcances de este tiempo extraño y desafiante, y aprender a vivirlos como una oportunidad para ser disruptivos, innovar, crecer y crear valor.</p>",
@@ -26,26 +26,22 @@
         {
             "type" : "Individual",
             "memberCost" : "16 UF",
-            "generalCost" : "20 UF",
-            "_id" : ObjectId("5aa6a290a94c262d389de4a2")
+            "generalCost" : "20 UF"
         }, 
         {
             "type" : "Corporativa / 4 personas",
             "memberCost" : "56 UF",
-            "generalCost" : "68 UF",
-            "_id" : ObjectId("5aa6a290a94c262d389de4a1")
+            "generalCost" : "68 UF"
         }, 
         {
             "type" : "Corporativa / 8 personas",
             "memberCost" : "96 UF",
-            "generalCost" : "120 UF",
-            "_id" : ObjectId("5aa6a290a94c262d389de4a0")
+            "generalCost" : "120 UF"
         }, 
         {
             "type" : "Corporativa / 12 personas",
             "memberCost" : "120 UF",
-            "generalCost" : "156 UF",
-            "_id" : ObjectId("5aa6a290a94c262d389de49f")
+            "generalCost" : "156 UF"
         }
     ],
     "sessions" : [ 
@@ -57,6 +53,7 @@
             "finishHour" : "10:30",
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec5f55367a19987a2ccfa"),
                     "name" : "Lorenzo Gazmuri",
                     "job" : "Presidente del Círculo de Marketing",
                     "image" : "http://www.icare.cl/assets/uploads/2017/09/directorio-12-lorenzo-gazmuri-1-116x116-c-default.jpg",
@@ -65,36 +62,215 @@
             ],
             "speechs" : [ 
                 {
-                    "idAuthor" : ObjectId("5aa69d323673652288e1225b"),
+                    "idAuthor" : ObjectId("5afc9a61e4da9cb1bb7a92e9"),
                     "title" : "La transformación de la sociedad chilena",
                     "author" : "Othon García",
                     "job" : "Fundador de Bitácora Social, México",
                     "image" : "http://www.icare.cl/assets/uploads/2017/10/othon-garcia-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/othon-garcia-icare-comar.pdf",
                     "description" : "¿Cómo han cambiado los chilenos y sus formas de vida? ¿Qué tan relevantes son los paradigmas de segmentación socioeconómica que usamos?",
                     "_id" : ObjectId("5aa6a290a94c262d389de4b5"),
-                    "evaluations" : [],
-                    "comments" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd8e7d736df6001448c0b8")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd91a3736df6001448c0c2")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afd999c736df6001448c0cb")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afda8c4736df6001448c0f2")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda97c736df6001448c0f8")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdac23736df6001448c100")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdad21736df6001448c102")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdc027736df6001448c122")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde4b5ccd84b0014e73cf0")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf0adccd84b0014e73d0f")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf6a9ccd84b0014e73d18")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5b00d96a5cb9c60014d960f6")
+                        }
+                    ],
+                    "comments" : [ 
+                        {
+                            "text" : "Muy interesante su mirar de como somos. Importante vernos como un pais que dentro del contexto latinoamericano no estamos mal y estaremos mejor cuando nos veamos \"metiendo goles\" y no culpando al arbitraje.",
+                            "userName" : "ALEJANDRA ARAVENA",
+                            "_id" : ObjectId("5afd9224736df6001448c0c3")
+                        }
+                    ]
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69d8c8bc0b425b4a7bdd7"),
+                    "idAuthor" : ObjectId("5afc9a92e4da9cb1bb7a92ea"),
                     "title" : "La disrupción tecnológica",
                     "author" : "Leo Prieto",
                     "job" : "Socio fundador de Betazeta, FayerWayer y director de AWTO",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/2--leo-prieto-ok-e1511879138424-120x120-c-default.jpeg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/05/leo-prieto-comar-2018-icare.pdf",
                     "description" : "¿Qué es realmente la revolución digital? ¿Qué herramientas la habilitan? ¿Dónde están los riesgos y las nuevas oportunidades?",
                     "_id" : ObjectId("5aa6a290a94c262d389de4b4"),
-                    "evaluations" : [],
-                    "comments" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd8e82736df6001448c0b9")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afd99a8736df6001448c0cc")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda8e0736df6001448c0f3")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdabea736df6001448c0fd")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdac12736df6001448c0fe")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdac1a736df6001448c0ff")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdad40736df6001448c103")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afdc02d736df6001448c123")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdc18c736df6001448c12a")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde4c0ccd84b0014e73cf1")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf6a3ccd84b0014e73d17")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf6d1ccd84b0014e73d1d")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5aff347d8fc1ac0014ef681e")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5b00d93b5cb9c60014d960f5")
+                        }
+                    ],
+                    "comments" : [ 
+                        {
+                            "text" : "De muy buen nivel, ritmo y aclaratoria de usos digitales",
+                            "userName" : "CHRISTIAN CACERES FUENTES",
+                            "_id" : ObjectId("5afd9ad2736df6001448c0db")
+                        }, 
+                        {
+                            "text" : "Excelente invitacion para esta audiencia",
+                            "userName" : "LUZ ELENA PARRA TONCEL",
+                            "_id" : ObjectId("5afdc19c736df6001448c12b")
+                        }
+                    ]
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69dbf1c027517e4d59f63"),
+                    "idAuthor" : ObjectId("5afc9ac1e4da9cb1bb7a92eb"),
                     "title" : "Contando historias online en un escenario ultrafragmentado",
                     "author" : "Andrés Valdivia",
                     "job" : "Director Ejecutivo de Noise Media",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/andrees-valdiviadirector-ejecutivo-noise-media-e1510239702861-120x120-c-default.jpg",
+                    "pdf" : "http://www.icare.cl/assets/uploads/2018/05/andres-valdivia-comar-2018-icare.pdf",
                     "description" : "¿Por qué los relatos son tan relevantes para el ser humano? ¿Cómo se relacionan las historias y las marcas?",
                     "_id" : ObjectId("5aa6a290a94c262d389de4b3"),
-                    "evaluations" : [],
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd8e87736df6001448c0ba")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd9040736df6001448c0c0")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd969f736df6001448c0c5")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd978f736df6001448c0c9")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afd99b1736df6001448c0cd")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afd9ead736df6001448c0e4")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda8ec736df6001448c0f5")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdad48736df6001448c104")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afdc016736df6001448c121")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde4c7ccd84b0014e73cf2")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdea3fccd84b0014e73d00")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5b00d9bc5cb9c60014d960f7")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5b00dc045cb9c60014d960fd")
+                        }
+                    ],
                     "comments" : []
                 }
             ],
@@ -108,6 +284,7 @@
             "finishHour" : "12:10",
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec5fed0ae25ee086d0be4"),
                     "name" : "Mauricio Ríos",
                     "job" : "Gerente General de Everis",
                     "image" : "http://www.icare.cl/assets/uploads/2017/09/mauricio-rios-4-e1511358355574-116x116-c-default.jpg",
@@ -116,34 +293,222 @@
             ],
             "speechs" : [ 
                 {
-                    "idAuthor" : ObjectId("5aa69de26373ae280c7194ee"),
+                    "idAuthor" : ObjectId("5afc9b55e4da9cb1bb7a92ec"),
                     "title" : "Paradigmas que hoy ya no funcionan  ",
                     "author" : "Alejandro Ruelas-Gossi",
                     "job" : "Profesor de Estrategia&Innovación, Miami Business School",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/ruelas-gossi-2-e1511879179521-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/alejandro-ruelas-gossi-comar-2018.pdf",
                     "description" : "¿Cómo reconocer cuando la inercia estratégica llega a su límite? ¿Qué síntomas acusan que la innovación ha llegado a una meseta?",
                     "_id" : ObjectId("5aa6a290a94c262d389de4b1"),
-                    "evaluations" : [],
-                    "comments" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd973b736df6001448c0c6")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afd9d00736df6001448c0de")
+                        }, 
+                        {
+                            "evaluation" : 1,
+                            "_id" : ObjectId("5afd9e6c736df6001448c0e3")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda0ff736df6001448c0e6")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda12f736df6001448c0ea")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda13c736df6001448c0ec")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda8fb736df6001448c0f6")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdad58736df6001448c105")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdbeab736df6001448c116")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdbebc736df6001448c118")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afddfa3ccd84b0014e73ce6")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde4d3ccd84b0014e73cf3")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5b00db4a5cb9c60014d960f9")
+                        }
+                    ],
+                    "comments" : [ 
+                        {
+                            "text" : "Una vision disruptiva que hace pensar",
+                            "userName" : "RODRIGO PALMA FANJUL",
+                            "_id" : ObjectId("5afda121736df6001448c0e8")
+                        }, 
+                        {
+                            "text" : "Muy buen speaker. Excelentes reflexiones. ",
+                            "userName" : "MARÍA EUGENIA FUENTES",
+                            "_id" : ObjectId("5afda137736df6001448c0eb")
+                        }
+                    ]
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69e039465ff27588d20ab"),
+                    "idAuthor" : ObjectId("5afc9b8ce4da9cb1bb7a92ed"),
                     "title" : "Marketing con propósito",
                     "author" : "Luis Fernando Dugand",
                     "job" : "Y&R-Vicepresidente para LATAM de Planeación Estratégica",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/luisfernandodugandyrlatam-e1511879228953-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/luis-fernando-gugand-comar-2018.pdf",
                     "description" : "¿A qué valores y bienes superiores adhiere nuestro esfuerzo de marketing? ¿Podemos ir más allá de los resultados de negocio?",
                     "_id" : ObjectId("5aa6a290a94c262d389de4b0"),
-                    "evaluations" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd9742736df6001448c0c7")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda7f3736df6001448c0ee")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda90e736df6001448c0f7")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afda98f736df6001448c0f9")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdad5d736df6001448c106")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdad70736df6001448c107")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdad78736df6001448c108")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdbeb1736df6001448c117")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afdbfeb736df6001448c11e")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdc177736df6001448c129")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afddfb5ccd84b0014e73ce7")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde4daccd84b0014e73cf4")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf6b4ccd84b0014e73d19")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5b00db4f5cb9c60014d960fa")
+                        }
+                    ],
+                    "comments" : [ 
+                        {
+                            "text" : "Muy bueno! Supo con entusiasmo captar a la audiencia con buenos datos! ",
+                            "userName" : "MARÍA EUGENIA FUENTES",
+                            "_id" : ObjectId("5afda81a736df6001448c0ef")
+                        }
+                    ]
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69e468d651e1fa88429d4"),
+                    "idAuthor" : ObjectId("5afc9bade4da9cb1bb7a92ee"),
                     "title" : "Donde está tu dolor está tu pasión",
                     "author" : "Josefa Monge",
                     "job" : "Co-fundadora y Directora de Cumplo; Directora de Sistema B",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/6--josefa-monge-color-e1511880801502-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/josefa-monge-comar-2018.pdf",
                     "description" : "Crear valor desde lo que te mueve e interpela",
-                    "_id" : ObjectId("5aa6a290a94c262d389de4af")
+                    "_id" : ObjectId("5aa6a290a94c262d389de4af"),
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afd9749736df6001448c0c8")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afda9b3736df6001448c0fa")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdaa64736df6001448c0fb")
+                        }, 
+                        {
+                            "evaluation" : 2,
+                            "_id" : ObjectId("5afdb729736df6001448c10c")
+                        }, 
+                        {
+                            "evaluation" : 2,
+                            "_id" : ObjectId("5afdbf00736df6001448c11c")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdbfde736df6001448c11d")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdbffb736df6001448c11f")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afddf9accd84b0014e73ce5")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde4e8ccd84b0014e73cf5")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afdf699ccd84b0014e73d16")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5b00db2f5cb9c60014d960f8")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5b00dc1c5cb9c60014d960fe")
+                        }
+                    ],
+                    "comments" : [ 
+                        {
+                            "text" : "Creo que el contenido era interesante pero dado que los dos speakers anteriores fueron realmente excelentes hizo que su participacion no fuera tan destacada. ",
+                            "userName" : "MARÍA EUGENIA FUENTES",
+                            "_id" : ObjectId("5afdb759736df6001448c10d")
+                        }
+                    ]
                 }
             ],
             "_id" : ObjectId("5aa6a290a94c262d389de4b2")
@@ -156,6 +521,7 @@
             "finishHour" : "14:00",
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec607a23e36fd9e41b54b"),
                     "name" : "Guillermo Ponce",
                     "job" : "Gerente General de VTR",
                     "image" : "http://www.icare.cl/assets/uploads/2017/09/guillermo-ponce-2-116x116-c-default.jpg",
@@ -164,35 +530,104 @@
             ],
             "speechs" : [ 
                 {
-                    "idAuthor" : ObjectId("5aa69e7df3c3942de0143a90"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f0"),
                     "title" : "Métricas para un mundo nuevo",
                     "author" : "Arun Arora",
                     "job" : "Partner de McKinsey & Co.",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/7--arun-arora-2-e1511886435339-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/arun-arora-comar-2018.pdf",
                     "description" : "Herramientas analíticas para una toma de decisiones basada en la información",
                     "_id" : ObjectId("5aa6a290a94c262d389de4ad"),
-                    "evaluations" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdb803736df6001448c10f")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afdbec9736df6001448c119")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde4faccd84b0014e73cf6")
+                        }
+                    ],
+                    "comments" : []
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69eb4f7ac7930b4877e1f"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f1"),
                     "title" : "El desafío de ejecutar: Tener el talento adecuado",
                     "author" : "Marc Alba",
                     "job" : "Socio Global de Innovación de everis",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/8--marc-alba-e1511885109782-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/marc-alba-comar-2018.pdf",
                     "description" : "Nuevos conocimientos y talentos para entender en profundidad y predecir el comportamiento de las personas",
                     "_id" : ObjectId("5aa6a290a94c262d389de4ac"),
-                    "evaluations" : [],
-                    "comments" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdbcd3736df6001448c113")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afdbecd736df6001448c11a")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afdbed0736df6001448c11b")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdbfff736df6001448c120")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdc036736df6001448c124")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afddfc3ccd84b0014e73ce8")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde500ccd84b0014e73cf7")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5b00dc2a5cb9c60014d960ff")
+                        }
+                    ],
+                    "comments" : [ 
+                        {
+                            "text" : "Increíble la visión de Marc",
+                            "userName" : "RODRIGO PALMA FANJUL",
+                            "_id" : ObjectId("5afdbd01736df6001448c114")
+                        }
+                    ]
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69ed8bcc14f31d8e6c642"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f2"),
                     "title" : "Ética del uso en marketing de Inteligencia Artificial y Big Data",
                     "author" : "Jason Jercinovic",
                     "job" : "Global Head of Marketing Innovation de Havas Cognitive, NY, EEUU",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/9--jason-jercinovic-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/jason-jercinovic-comar-2018.pdf",
                     "description" : "Una reflexión inevitable sobre consecuencia y límites",
                     "_id" : ObjectId("5aa6a290a94c262d389de4ab"),
-                    "evaluations" : [],
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afddfccccd84b0014e73ce9")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde508ccd84b0014e73cf8")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5b00dc305cb9c60014d96100")
+                        }
+                    ],
                     "comments" : []
                 }
             ],
@@ -206,12 +641,14 @@
             "finishHour" : "16:15",
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec61160138c956007fad3"),
                     "name" : "Verónica Edwards",
                     "job" : "Directora de Empresas",
                     "image" : "http://www.icare.cl/assets/uploads/2017/09/directorio-9-veronica-edwards-1-116x116-c-default.jpg",
                     "rol" : "Modera"
                 }, 
                 {
+                    "_id" : ObjectId("5b0ec6162bcb08eba4441c5a"),
                     "name" : "Max Purcell",
                     "job" : "Gerente General GfK Adimark",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/max-purcell-e1511886573667-116x116-c-default.jpg",
@@ -220,42 +657,201 @@
             ],
             "speechs" : [ 
                 {
-                    "idAuthor" : ObjectId("5aa69eef9c368235a0f416be"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f3"),
                     "title" : "Mall Plaza",
                     "author" : "María Elena Guerrero",
                     "job" : "Gerente de Marketing Corporativo",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/10--mane-guerrero-e1511885222779-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/maria-elena-guerrero-comar-2018-ilovepdf-compressed.pdf",
                     "description" : " ",
                     "_id" : ObjectId("5aa6a290a94c262d389de4a9"),
-                    "evaluations" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdd91e736df6001448c12f")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdd9c0736df6001448c130")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdd9eb736df6001448c131")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afddbfe736df6001448c134")
+                        }, 
+                        {
+                            "evaluation" : 1,
+                            "_id" : ObjectId("5afddefaccd84b0014e73ce2")
+                        }, 
+                        {
+                            "evaluation" : 1,
+                            "_id" : ObjectId("5afddf89ccd84b0014e73ce4")
+                        }, 
+                        {
+                            "evaluation" : 1,
+                            "_id" : ObjectId("5afddfdcccd84b0014e73cea")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde0b8ccd84b0014e73cec")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afde47accd84b0014e73ced")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde515ccd84b0014e73cf9")
+                        }, 
+                        {
+                            "evaluation" : 1,
+                            "_id" : ObjectId("5afdebefccd84b0014e73d02")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf043ccd84b0014e73d07")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf6c1ccd84b0014e73d1a")
+                        }
+                    ],
+                    "comments" : [ 
+                        {
+                            "text" : "Me encanta el enfoque de experiencia de Mall Plaza",
+                            "userName" : "RODRIGO PALMA FANJUL",
+                            "_id" : ObjectId("5afddc2e736df6001448c135")
+                        }
+                    ]
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69f0f73af4128d4c865ca"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f4"),
                     "title" : "Work Café Banco Santander",
                     "author" : "Matías Sánchez",
                     "job" : "Gerente División Banca Comercial",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/11--matias-sanchez-e1511885264396-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/matias-sanchez-comar-2018.pdf",
                     "description" : " ",
                     "_id" : ObjectId("5aa6a290a94c262d389de4a8"),
-                    "evaluations" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afddf7accd84b0014e73ce3")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde0aeccd84b0014e73ceb")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afde4a3ccd84b0014e73cef")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde51bccd84b0014e73cfa")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf069ccd84b0014e73d0a")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf6c1ccd84b0014e73d1b")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf6c8ccd84b0014e73d1c")
+                        }
+                    ],
+                    "comments" : []
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69f34a7d2b02fc0c59f2c"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f5"),
                     "title" : "Unilever Chile",
                     "author" : "Chantal Goldschmidt",
                     "job" : "Directora de Marketing",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/12--chantal-goldschmidt-e1511885295268-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/chantal-goldschmidt-comar-2018.pdf",
                     "description" : " ",
-                    "_id" : ObjectId("5aa6a290a94c262d389de4a7")
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a7"),
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde492ccd84b0014e73cee")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde523ccd84b0014e73cfb")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde7eaccd84b0014e73cfd")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afdebfeccd84b0014e73d04")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afdf061ccd84b0014e73d09")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5b00db7b5cb9c60014d960fb")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5b00dc705cb9c60014d96101")
+                        }
+                    ],
+                    "comments" : []
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69f722596a621e44e3794"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f6"),
                     "title" : "The not company",
                     "author" : "Matías Muchnick",
                     "job" : "Socio Fundador",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/13--matias-muchnick-e1511885327743-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/matias-muchnick-comar-2018.pdf",
                     "description" : " ",
-                    "_id" : ObjectId("5aa6a290a94c262d389de4a6")
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a6"),
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde75fccd84b0014e73cfc")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afde7f6ccd84b0014e73cfe")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdeb8accd84b0014e73d01")
+                        }, 
+                        {
+                            "evaluation" : 3,
+                            "_id" : ObjectId("5afdebf9ccd84b0014e73d03")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf059ccd84b0014e73d08")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5b00dba75cb9c60014d960fc")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5b00dc745cb9c60014d96102")
+                        }
+                    ],
+                    "comments" : []
                 }
             ],
             "_id" : ObjectId("5aa6a290a94c262d389de4aa")
@@ -268,6 +864,7 @@
             "finishHour" : "17:45",
             "moderators" : [ 
                 {
+                    "_id" : ObjectId("5b0ec620ea06c37cd75a1c67"),
                     "name" : "Agatha Porte",
                     "job" : "Presidenta Ejecutiva, Grupo BBDO & Proximity",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/0--preside-agathe-porte-e1511885382486-116x116-c-default.jpg",
@@ -276,28 +873,55 @@
             ],
             "speechs" : [ 
                 {
-                    "idAuthor" : ObjectId("5aa69f9b0fa60f0370560048"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f7"),
                     "title" : "Adecuándose a un nuevo panorama de medios",
                     "author" : "David Rolfe",
                     "job" : "Director of Integrated Production de BBDO NY, EEUU",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/14--dave_rolf-120x120-c-default.jpg",
+                    "pdf" : "http://icare.cl/assets/uploads/2018/05/david-rolfe-comar-2018.pdf",
                     "description" : "¿Cómo llegar de manera ágil, atractiva y oportuna a los clientes en el actual panorama de medios?",
-                    "_id" : ObjectId("5aa6a290a94c262d389de4a4")
+                    "_id" : ObjectId("5aa6a290a94c262d389de4a4"),
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf099ccd84b0014e73d0c")
+                        }, 
+                        {
+                            "evaluation" : 4,
+                            "_id" : ObjectId("5afdf0a6ccd84b0014e73d0e")
+                        }
+                    ],
+                    "comments" : []
                 }, 
                 {
-                    "idAuthor" : ObjectId("5aa69fc5b582202d34bd2b58"),
+                    "idAuthor" : ObjectId("5afc9c67e4da9cb1bb7a92f8"),
                     "title" : "La cuarta revolución creativa",
                     "author" : "Juan Carlos Ortiz",
                     "job" : "CEO de DDB Latina y Presidente Creativo de DDB América",
                     "image" : "http://www.icare.cl/assets/uploads/2017/11/15--juancarlosortiz-e1511885494624-120x120-c-default.jpg",
                     "description" : "Cuando la emoción lidera a la acción",
                     "_id" : ObjectId("5aa6a290a94c262d389de4a3"),
-                    "evaluations" : []
+                    "evaluations" : [ 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afdf8ccccd84b0014e73d1e")
+                        }, 
+                        {
+                            "evaluation" : 5,
+                            "_id" : ObjectId("5afe2815ccd84b0014e73d25")
+                        }
+                    ],
+                    "comments" : []
                 }
             ],
             "_id" : ObjectId("5aa6a290a94c262d389de4a5")
         }
     ],
-    "__v" : 120,
-    "inscriptions" : []
+    "__v" : 274,
+    "inscriptions" : [ 
+        {
+            "code" : "comar",
+            "_id" : ObjectId("5afd7e1b736df6001448c097")
+        }
+    ]
 }

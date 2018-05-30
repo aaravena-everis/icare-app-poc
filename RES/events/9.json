@@ -22,6 +22,7 @@
     "ticket" : null,
     "sessions" : [ 
         {
+            "_id" : ObjectId("5b0eccf550e9d230f8f93beb"),
             "number" : null,
             "name" : null,
             "description" : null,
@@ -30,6 +31,7 @@
             "moderators" : [],
             "speechs" : [ 
                 {
+                    "_id" : ObjectId("5b0eccfa4f75d8138870f8f2"),
                     "title" : null,
                     "author" : "Nicolás Monckeberg",
                     "job" : "Ministro del Trabajo y Previsión Social",
@@ -40,6 +42,7 @@
                     "comments" : []
                 }, 
                 {
+                    "_id" : ObjectId("5b0eccfe4c909b9aa8c59505"),
                     "title" : null,
                     "author" : "Pablo Antolín",
                     "job" : "Economista Principal y Jefe de la Unidad de Pensiones Privadas, OCDE",
@@ -50,6 +53,7 @@
                     "comments" : []
                 }, 
                 {
+                    "_id" : ObjectId("5b0ecd03f75d41d6e344154b"),
                     "title" : null,
                     "author" : "Henning Hansen",
                     "job" : "Asesor Senior de la DFSA, Danish Financial Supervisory Authority",
@@ -60,6 +64,7 @@
                     "comments" : []
                 }, 
                 {
+                    "_id" : ObjectId("5b0ecd0b18511242d77d5958"),
                     "title" : null,
                     "author" : "Andrea Tokman",
                     "job" : "Economista Jefe de Quiñenco S.A.",

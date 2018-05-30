@@ -22,6 +22,7 @@
     "ticket" : null,
     "sessions" : [ 
         {
+            "_id" : ObjectId("5b0ecd110c6545aa37b97a21"),
             "number" : null,
             "name" : "Economía y desarrollo social",
             "description" : null,
@@ -30,6 +31,7 @@
             "moderators" : [],
             "speechs" : [ 
                 {
+                    "_id" : ObjectId("5b0ecd15dfe4233f5971c62f"),
                     "title" : null,
                     "author" : "Alfredo Moreno",
                     "job" : "Ministro de Desarrollo Social",
@@ -42,6 +44,7 @@
             ]
         }, 
         {
+            "_id" : ObjectId("5b0ecd1ad5ae8d9f682e0b4f"),
             "number" : null,
             "name" : "Desafíos políticos y gestión legislativa",
             "description" : null,
@@ -50,6 +53,7 @@
             "moderators" : [],
             "speechs" : [ 
                 {
+                    "_id" : ObjectId("5b0ecd5d09ba112a87ce97e6"),
                     "title" : null,
                     "author" : "Ximena Rincón",
                     "job" : "Senadora (Democracia Cristiana)",
@@ -60,6 +64,7 @@
                     "comments" : []
                 }, 
                 {
+                    
                     "title" : null,
                     "author" : "Felipe Kast",
                     "job" : "Senador (Evopoli)",
