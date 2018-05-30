@@ -302,8 +302,8 @@ exports.listActiveUsers = function(req, res) {
     query.then(function(users){
         users.forEach(function(user){
             var r_user = {
-                name: user.name,
-                lastName: user.lastName,
+                name: user.name.toLowerCase(),
+                lastName: user.lastName.toLowerCase(),
                 occupation: user.occupation,
                 company: user.company,
                 job: user.job,
