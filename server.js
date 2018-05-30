@@ -60,6 +60,7 @@ api.route('/event-featured').get(eventCtrl.getFeaturedEvents);
 api.route('/event-archived').get(eventCtrl.getArchiveEvents);
 api.route('/event-today').get(eventCtrl.getTodayEvent);
 api.route('/event/:id').get(eventCtrl.getEventDetail);
+api.route('/comment/:idEvent/:idSession/:idSpeech').get(eventCtrl.listCommentsOfSpeech);
 api.route('/comment/add').post(eventCtrl.addCommentToSpeech);
 api.route('/evaluation/add').post(eventCtrl.addEvaluationToSpeech);
 api.route('/inscription/add').post(eventCtrl.addInscription);

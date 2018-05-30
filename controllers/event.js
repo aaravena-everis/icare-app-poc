@@ -323,3 +323,33 @@ exports.addCommentToSpeech = function(req, res) {
         res.status(500).send(response.errorResponse(500,labels.ERRA015, handler.message));
     }
 };
+
+
+
+exports.listCommentsOfSpeech = function(req, res) {
+     console.log(req.params)
+    try {
+        if ((!response.isValidID(req.params.idEvent)) && (!response.isValidID(req.params.idSession)) && (!response.isValidID(req.params.idSpeech))){
+            res.status(500).send(response.errorResponse(400,labels.ERRA005));
+        } else {
+            var query = Event.findById(req.params.idEvent).exec();
+            query.then(function(event){
+                if(event) {
+                    event.sessions.forEach(function(session) {
+                        if(session._id.toString() == req.params.idSession) {
+                            session.speechs.forEach(function(speech){
+                                if(speech._id.toString() == req.params.idSpeech) {
+                                    res.status(200).jsonp(response.successfulResponse(labels.SUCC013, speech.comments));  
+                                }
+                            });
+                        }
+                    });
+                } else {
+                    res.status(400).jsonp(response.errorResponse(400,labels.ERRA015));
+                }
+            });
+        }
+    } catch (handler) {
+        res.status(500).send(response.errorResponse(500,labels.ERRA015, handler.message));
+    }
+};
