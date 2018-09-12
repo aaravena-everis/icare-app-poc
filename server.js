@@ -48,7 +48,7 @@ var ejemploCtrl = require('./controllers/ejemplo');
 app.use('/api', api);
 api.route('/ejemplo/list').get(ejemploCtrl.listar);
 api.route('/ejemplo/:id').get(ejemploCtrl.detalle);
-api.route('/ejemplo/add/').post(ejemploCtrl.agregar);
+api.route('/ejemplo/add').post(ejemploCtrl.agregar);
 api.route('/author/:id').get(authorCtrl.getAuthor);
 api.route('/addUser').post(userCtrl.add);
 api.route('/user/:id').get(userCtrl.getUserCardShort);
