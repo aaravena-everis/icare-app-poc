@@ -3,3 +3,4 @@ require('./event');
 require('./user');
 require('./stream-url');
 require('./version');
+require('./ejemplo');
