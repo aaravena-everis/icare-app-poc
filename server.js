@@ -1,5 +1,5 @@
 //require('newrelic');
-//var compression = require('compression');
+var compression = require('compression');
 var express        = require('express');
 var app            = express();
 var bodyParser     = require('body-parser');
