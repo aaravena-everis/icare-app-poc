@@ -42,9 +42,13 @@ var eventCtrl = require('./controllers/event');
 var userCtrl = require('./controllers/user');
 var streamCtrl = require('./controllers/stream-url');
 var versionCtrl = require('./controllers/version');
+var ejemploCtrl = require('./controllers/ejemplo');
 
 // API routes
 app.use('/api', api);
+api.route('/ejemplo/list').get(ejemploCtrl.listar);
+api.route('/ejemplo/:id').get(ejemploCtrl.detalle);
+api.route('/ejemplo/add').post(ejemploCtrl.agregar);
 api.route('/author/:id').get(authorCtrl.getAuthor);
 api.route('/addUser').post(userCtrl.add);
 api.route('/user/:id').get(userCtrl.getUserCardShort);
