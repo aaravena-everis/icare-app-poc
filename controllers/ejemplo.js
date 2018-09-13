@@ -56,7 +56,7 @@ exports.agregar = function(req, res) {
                 image: req.body.image
             });
 
-            var query = Ejemplo.findOne({ name: ejemplo.email }).exec();
+            var query = Ejemplo.findOne({ name: ejemplo.name }).exec();
             query.then(function(checkEjemplo){
                 if(checkEjemplo){
                     var _ejemplo = {
