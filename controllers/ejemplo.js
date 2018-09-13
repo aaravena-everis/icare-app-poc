@@ -14,7 +14,7 @@ exports.listar = function(req, res) {
         ejemplos.forEach(function(ejemplo){
             var r_ejemplo = {
                 name: ejemplo.name,
-                image: ejemplo.name,
+                image: ejemplo.image,
                 id: ejemplo._id
             };
             r_ejemplo_list.push(r_ejemplo);
